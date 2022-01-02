@@ -37,7 +37,7 @@ const NavBar = ({ page, mobileNav, setMobileNav, resizing }) => {
                     </div>
                 </div>
                 <Link to="/#contact" ref={link3} smooth className={page === 'homepage' ? "homepage-header-nav-link askew-15" : ""}>contact</Link>
-                <a href={resume} ref={link4} target="_blank" rel="noreferrer" className={page === 'homepage' ? "homepage-header-nav-link askew-15" : ""}>view resume</a>
+                <a href={resume} ref={link4} target="_blank" rel="noreferrer" className={page === 'homepage' ? "homepage-header-nav-link askew-15" : ""}>resume</a>
             </div>
             <div className="mobile-nav-links" onClick={() => setMobileNav(!mobileNav)}>
                 <div className={mobileNav ? "top-mobile-div" : ""}></div>
