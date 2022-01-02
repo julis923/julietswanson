@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/julietswanson/static/css/main.1de35eb9.chunk.css",
+    "main.js": "/julietswanson/static/js/main.9651e608.chunk.js",
+    "main.js.map": "/julietswanson/static/js/main.9651e608.chunk.js.map",
+    "runtime-main.js": "/julietswanson/static/js/runtime-main.5fbf3093.js",
+    "runtime-main.js.map": "/julietswanson/static/js/runtime-main.5fbf3093.js.map",
+    "static/js/2.f0f99ec9.chunk.js": "/julietswanson/static/js/2.f0f99ec9.chunk.js",
+    "static/js/2.f0f99ec9.chunk.js.map": "/julietswanson/static/js/2.f0f99ec9.chunk.js.map",
+    "static/js/3.326b2216.chunk.js": "/julietswanson/static/js/3.326b2216.chunk.js",
+    "static/js/3.326b2216.chunk.js.map": "/julietswanson/static/js/3.326b2216.chunk.js.map",
+    "index.html": "/julietswanson/index.html",
+    "static/css/main.1de35eb9.chunk.css.map": "/julietswanson/static/css/main.1de35eb9.chunk.css.map",
+    "static/js/2.f0f99ec9.chunk.js.LICENSE.txt": "/julietswanson/static/js/2.f0f99ec9.chunk.js.LICENSE.txt",
+    "static/media/Resume2022.402eda71.pdf": "/julietswanson/static/media/Resume2022.402eda71.pdf",
+    "static/media/barebites-branding.f4e25804.png": "/julietswanson/static/media/barebites-branding.f4e25804.png",
+    "static/media/barebites-hifi-1.ae531944.png": "/julietswanson/static/media/barebites-hifi-1.ae531944.png",
+    "static/media/barebites-lofi-1.5d1ee77f.png": "/julietswanson/static/media/barebites-lofi-1.5d1ee77f.png",
+    "static/media/barebites-lofi-2.297c166b.png": "/julietswanson/static/media/barebites-lofi-2.297c166b.png",
+    "static/media/barebites-video.d272322c.mp4": "/julietswanson/static/media/barebites-video.d272322c.mp4",
+    "static/media/github-icon.41a504e4.png": "/julietswanson/static/media/github-icon.41a504e4.png",
+    "static/media/headshot.4f0f3c51.png": "/julietswanson/static/media/headshot.4f0f3c51.png",
+    "static/media/index.css": "/julietswanson/static/media/projects-bg.0ffcbafd.png",
+    "static/media/icsi-video.f87559e9.mp4": "/julietswanson/static/media/icsi-video.f87559e9.mp4",
+    "static/media/macbook-outline.5adee2ce.png": "/julietswanson/static/media/macbook-outline.5adee2ce.png",
+    "static/media/mystyler-video.4fac789b.mp4": "/julietswanson/static/media/mystyler-video.4fac789b.mp4",
+    "static/media/mystyler-wireframe.9bed427a.png": "/julietswanson/static/media/mystyler-wireframe.9bed427a.png",
+    "static/media/railtime-video.9729891b.mp4": "/julietswanson/static/media/railtime-video.9729891b.mp4",
+    "static/media/resumes-1.5182bfe2.png": "/julietswanson/static/media/resumes-1.5182bfe2.png",
+    "static/media/resumes-2.c7eb3bcd.png": "/julietswanson/static/media/resumes-2.c7eb3bcd.png",
+    "static/media/resumes-3.24dc3e90.png": "/julietswanson/static/media/resumes-3.24dc3e90.png",
+    "static/media/wholesome-video.e0d479b7.mp4": "/julietswanson/static/media/wholesome-video.e0d479b7.mp4"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5fbf3093.js",
+    "static/js/2.f0f99ec9.chunk.js",
+    "static/css/main.1de35eb9.chunk.css",
+    "static/js/main.9651e608.chunk.js"
+  ]
+}
