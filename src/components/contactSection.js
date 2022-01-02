@@ -7,7 +7,7 @@ import resume from '../files/Resume2022.pdf'
 const ContactSection = () => {
     return  (
         <div className="contact-section">
-            <h2 id="contactSection">contact</h2>
+            <h2 id="contact">contact</h2>
             <div className="contact-section-container">
                 <div className="contact-item">
                     <img className="contact-icon" src={emailIcon} alt="email icon"/>

@@ -7,7 +7,7 @@ const HomepageProjects = ({ resizing, setResizing }) => {
 
     return (
         <div className="homepage-projects">
-            <h2 id="projectSection">projects</h2>
+            <h2 id="projects">projects</h2>
             <div className="projects-header">
                 <h3>Featured Projects</h3>
                 <p>Explore my featured projects below, or <a href="/projects">browse all of my projects here.</a> Most projects involve aspects of both design and programming/development.</p>

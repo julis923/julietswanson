@@ -250,18 +250,22 @@ h4 {
     transition: all 0.2s ease;
     position: absolute;
     left: 40px;
+    top: 32px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     a {
-        font-size: 17px;
+        font-size: 18px;
         position: relative;
-        color: $primary-yellow;
+        color: $primary-orange;
         margin: 0;
         border-bottom: none;
         height: min-content;
-        padding: 0;
-        padding-top: 10px;
+        padding: 5px;
         transition: all 0.2s ease;
         &:hover {
-            color: $primary-orange;
+            color: $primary-yellow;
         }
     }
 }
@@ -274,11 +278,6 @@ h4 {
 
 .project-page-link {
     border-bottom: none !important;
-}
-
-.featured-projects-link {
-    border-bottom: 6px solid $primary-yellow !important;
-    padding-bottom: 10px !important;
 }
 
 .mobile-nav-links {
@@ -1214,8 +1213,21 @@ h4 {
         h1, h2 {
             color: white;
         }
-        a, .project-nav-link{
+        a {
             color: white;
+        }
+        .project-page-link {
+            color: $primary-orange;
+            &:hover {
+                color: $primary-yellow;
+            }
+        }
+        .project-main-link {
+            color: white;
+            &:hover {
+                color: white;
+            }
+
         }
         .mobile-nav-links {
             div {

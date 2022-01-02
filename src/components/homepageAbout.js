@@ -6,7 +6,7 @@ const HomepageAbout = () => {
 
     return (
         <div className="homepage-about">
-            <h2 id="aboutSection">about</h2>
+            <h2 id="about">about</h2>
             <div className="homepage-about-copy">
                 <div className="content">
                     <h3>welcome!</h3>

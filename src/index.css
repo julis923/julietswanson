@@ -336,25 +336,30 @@ h4 {
   transition: all 0.2s ease;
   position: absolute;
   left: 40px;
+  top: 32px;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: white;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .project-links a {
-  font-size: 17px;
+  font-size: 18px;
   position: relative;
-  color: #f8b303;
+  color: #fd6a00;
   margin: 0;
   border-bottom: none;
   height: -webkit-min-content;
   height: -moz-min-content;
   height: min-content;
-  padding: 0;
-  padding-top: 10px;
+  padding: 5px;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
 
 .project-links a:hover {
-  color: #fd6a00;
+  color: #f8b303;
 }
 
 .project-links-container {
@@ -368,11 +373,6 @@ h4 {
 
 .project-page-link {
   border-bottom: none !important;
-}
-
-.featured-projects-link {
-  border-bottom: 6px solid #f8b303 !important;
-  padding-bottom: 10px !important;
 }
 
 .mobile-nav-links {
@@ -1651,7 +1651,23 @@ h4 {
   color: white;
 }
 
-.projects-page .navbar a, .projects-page .navbar .project-nav-link {
+.projects-page .navbar a {
+  color: white;
+}
+
+.projects-page .navbar .project-page-link {
+  color: #fd6a00;
+}
+
+.projects-page .navbar .project-page-link:hover {
+  color: #f8b303;
+}
+
+.projects-page .navbar .project-main-link {
+  color: white;
+}
+
+.projects-page .navbar .project-main-link:hover {
   color: white;
 }
 

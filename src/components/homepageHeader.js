@@ -18,7 +18,7 @@ const HomepageHeader = ({ link1, link2, link3, link4, resizing }) => {
         .to(link3.current, { marginTop: 0, rotation: 0, delay: 0.1, duration: 0.2, ease: "elastic" })
         .to(link2.current, { marginTop: 0, rotation: 0, delay: 0.1, duration: 0.2, ease: "elastic" })
         .to(link4.current, { marginTop: 0, rotation: 0, delay: 0.1, duration: 0.2, ease: "elastic" })
-    }, [link1, link2, link3])
+    }, [link1, link2, link3, link4])
 
     return (
         <>
