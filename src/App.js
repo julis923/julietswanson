@@ -32,7 +32,7 @@ function App({ page }) {
         <ParallaxBg classes={'homepage-bg-2'} mobileNav={mobileNav} resizing={resizing} bg={2}/>
       </div>
       <HomepageProjects resizing={resizing} setResizing={setResizing} />
-      <div style={{position: 'relative', height: '60vh', backgroundColor: '#f8b303', zIndex: '-1'}}>
+      <div style={{position: 'relative', height: '60vh', backgroundColor: '#ffba0d', zIndex: '-1'}}>
         <ParallaxBg classes={'homepage-bg-3'} mobileNav={mobileNav} resizing={resizing} bg={3}/>
       </div>
       <ContactSection />
