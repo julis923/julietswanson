@@ -27,13 +27,14 @@ const Project = ({ hashlink, title, description, mainImg, types, tags, viewCode,
     }
 
     useEffect(() => {
+        console.log(viewDetails)
         if (!viewDetails) {
             tl.current = gsap.timeline()
-            .to(projectDetails.current, {height: 0}, {duration: 1.5})
+            .to(projectDetails.current, {height: 0, duration: 1.5})
         } else {
             tl.current = gsap.timeline()
-            .to(projectDetails.current, {height: projectDetailsContent.current.clientHeight, transition: "all 1s ease", duration: 1 })
-            .to(projectDetails.current, {height: 'auto', transition: "none", delay: 2 })
+            .to(projectDetails.current, {height: projectDetailsContent.current.clientHeight, transition: "all 1.2s ease", duration: 1.2 })
+            .to(projectDetails.current, {height: 'auto', transition: "none"})
         }
     }, [viewDetails])
 

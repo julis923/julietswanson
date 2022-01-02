@@ -996,7 +996,7 @@ h4 {
 }
 
 .hidden-details {
-    height: 0;
+    height: 0 !important;
     overflow: hidden;
     h4 {
         color: $primary-orange
