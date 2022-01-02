@@ -124,8 +124,8 @@ h4 {
 }
 
 .nav-name h2 {
-  letter-spacing: 3px;
-  margin-right: 10px;
+  letter-spacing: 6px;
+  margin-right: 20px;
   opacity: 0;
   color: #ffba0d;
   width: -webkit-max-content;
@@ -137,12 +137,14 @@ h4 {
   .nav-name h2 {
     font-size: 20px;
     margin-bottom: 10px;
+    margin-right: 10px;
   }
 }
 
 @media only screen and (max-width: 600px) {
   .nav-name h2 {
     font-size: 18px;
+    letter-spacing: 3.2px;
     margin-bottom: 2px;
   }
 }
@@ -151,6 +153,7 @@ h4 {
   .nav-name h2 {
     font-size: 16px;
     margin-bottom: 2px;
+    letter-spacing: 2.6px;
   }
 }
 
@@ -412,11 +415,6 @@ h4 {
           transform: rotate(-15deg);
 }
 
-.askew-30 {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
 .offCenter {
   margin-top: -300px !important;
   -webkit-transform: rotate(45deg);
@@ -471,6 +469,26 @@ h4 {
           flex-direction: column;
 }
 
+@media only screen and (max-height: 650px) and (min-width: 550px) {
+  .mobile-nav-btn-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    width: 80vw;
+  }
+}
+
+@media only screen and (max-height: 500px) {
+  .mobile-nav-btn-container {
+    height: 50vh;
+    margin-top: 5vh;
+  }
+}
+
 .mobile-nav-btn {
   cursor: pointer;
   text-align: center;
@@ -494,21 +512,6 @@ h4 {
   border-bottom: 6px solid transparent;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-}
-
-@media only screen and (max-height: 550px) {
-  .mobile-nav-btn {
-    padding: 10px 0;
-  }
-}
-
-@media only screen and (max-height: 430px) {
-  .mobile-nav-btn {
-    padding: 2px 0;
-  }
-  .mobile-nav-btn a {
-    padding-bottom: 12px;
-  }
 }
 
 .top-mobile-div {

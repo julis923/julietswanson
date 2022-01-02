@@ -29,7 +29,7 @@ const NavBar = ({ page, mobileNav, setMobileNav, resizing }) => {
                 { page === 'homepage' ? <HomepageHeader page={page} link1={link1} link2={link2} link3={link3} link4={link4} resizing={resizing} /> : <GeneralHeader />}
             <div className="nav-links">
                 <Link to="/#about" ref={link1} smooth className={page === 'homepage' ? "homepage-header-nav-link askew-15" : ""}>about</Link>                
-                <div className={`project-links-container ${page === 'homepage' ? "homepage-header-nav-link askew-30" : ""}`} ref={link2}>
+                <div className={`project-links-container ${page === 'homepage' ? "homepage-header-nav-link askew-n15" : ""}`} ref={link2}>
                     <Link to="/projects" className={`project-page-link project-main-link`} onMouseOver={() => setProjectLinks(true)} onMouseLeave={() => setProjectLinks(false)}>projects</Link>
                     <div className={projectLinks ? "project-links" : "invisible"} onMouseOver={() => setProjectLinks(true)} onMouseLeave={() => setProjectLinks(false)}>
                         <Link to="/projects" className={projectLinks ? "project-page-link" : "hidden"}>view all</Link>
@@ -37,7 +37,7 @@ const NavBar = ({ page, mobileNav, setMobileNav, resizing }) => {
                     </div>
                 </div>
                 <Link to="/#contact" ref={link3} smooth className={page === 'homepage' ? "homepage-header-nav-link askew-15" : ""}>contact</Link>
-                <a href={resume} ref={link4} target="_blank" rel="noreferrer" className={page === 'homepage' ? "homepage-header-nav-link askew-15" : ""}>resume</a>
+                <a href={resume} ref={link4} target="_blank" rel="noreferrer" className={page === 'homepage' ? "homepage-header-nav-link askew-n15" : ""}>resume</a>
             </div>
             <div className="mobile-nav-links" onClick={() => setMobileNav(!mobileNav)}>
                 <div className={mobileNav ? "top-mobile-div" : ""}></div>

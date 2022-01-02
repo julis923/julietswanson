@@ -6,7 +6,6 @@ import App from './App';
 import Projects from './pages/projects';
 import reportWebVitals from './reportWebVitals';
 
-
 //basename={process.env.PUBLIC_URL}
 ReactDOM.render(
   <BrowserRouter basename={process.env.PUBLIC_URL}>
