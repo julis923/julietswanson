@@ -7,7 +7,7 @@ import Projects from './pages/projects';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <BrowserRouter>
+  <BrowserRouter basename={process.env.PUBLIC_URL}>
     <Routes>
       <Route path="/" element={<App page={'homepage'} />}></Route>
       <Route path="/projects" element={<Projects page={'projects'} />}></Route>
