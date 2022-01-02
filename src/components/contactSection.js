@@ -2,7 +2,7 @@ import emailIcon from '../assets/email-icon.png';
 import linkedinIcon from '../assets/linkedin-icon.png';
 import githubIcon from '../assets/github-icon.png'
 import resumeIcon from '../assets/resume-icon.png'
-import resume from '../files/Resume2022.pdf'
+import resume from '../files/Juliet-Swanson_2022.pdf'
 
 const ContactSection = () => {
     return  (

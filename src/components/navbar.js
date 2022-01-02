@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import { HashLink as Link } from 'react-router-hash-link';
 import HomepageHeader from "./homepageHeader";
 import GeneralHeader from "./generalHeader"
-import resume from '../files/Resume2022.pdf';
+import resume from '../files/Juliet-Swanson_2022.pdf'
 
 const NavBar = ({ page, mobileNav, setMobileNav, resizing }) => {
 
@@ -30,7 +30,7 @@ const NavBar = ({ page, mobileNav, setMobileNav, resizing }) => {
             <div className="nav-links">
                 <Link to="/#about" ref={link1} smooth className={page === 'homepage' ? "homepage-header-nav-link askew-15" : ""}>about</Link>                
                 <div className={`project-links-container ${page === 'homepage' ? "homepage-header-nav-link askew-30" : ""}`} ref={link2}>
-                    <a href="/projects" className={`project-page-link project-main-link`} onMouseOver={() => setProjectLinks(true)} onMouseLeave={() => setProjectLinks(false)}>projects</a>
+                    <Link to="/projects" className={`project-page-link project-main-link`} onMouseOver={() => setProjectLinks(true)} onMouseLeave={() => setProjectLinks(false)}>projects</Link>
                     <div className={projectLinks ? "project-links" : "invisible"} onMouseOver={() => setProjectLinks(true)} onMouseLeave={() => setProjectLinks(false)}>
                         <Link to="/projects" className={projectLinks ? "project-page-link" : "hidden"}>view all</Link>
                         <Link to="/#projects" smooth className={projectLinks ? "project-page-link" : "hidden"}>featured</Link>
