@@ -3,17 +3,19 @@ import React, { useState, useRef, useEffect } from 'react';
 import ProjectButtons from './projectButtons';
 import ProjectGallery from './projectGallery';
 import ChevronSvg from './chevronSvg';
+import { gsap } from 'gsap';
+
 
 
 const Project = ({ hashlink, title, description, mainImg, types, tags, viewCode, viewLive, project, projectProcess, details, resizing, setCurrentHash }) => {
     
     const [viewDetails, setViewDetails] = useState(false)
     const [toggler, setToggler] = useState(false)
-    const [detailsHeight, setDetailsHeight] = useState(0)
 
     const projectWrapper = useRef();
     const projectDetails = useRef();
     const projectDetailsContent = useRef();
+    const tl = useRef();
 
     const handleProjectView = () => {
         setViewDetails(!viewDetails)
@@ -26,20 +28,18 @@ const Project = ({ hashlink, title, description, mainImg, types, tags, viewCode,
 
     useEffect(() => {
         if (!viewDetails) {
-            setDetailsHeight(0)
+            tl.current = gsap.timeline()
+            .to(projectDetails.current, {height: 0}, {duration: 1.5})
         } else {
-            setTimeout(() => {
-                setDetailsHeight(projectDetailsContent.current.clientHeight)
-                if (window.location.pathname !== '/') {
-                    setCurrentHash(hashlink)
-                }
-            }, 600)
+            tl.current = gsap.timeline()
+            .to(projectDetails.current, {height: projectDetailsContent.current.clientHeight, transition: "all 1s ease", duration: 1 })
+            .to(projectDetails.current, {height: 'auto', transition: "none", delay: 2 })
         }
-    }, [viewDetails, resizing, setDetailsHeight])
+    }, [viewDetails])
 
     useEffect(() => {
         
-    }, [detailsHeight, setDetailsHeight, resizing, viewDetails])
+    }, [resizing, viewDetails])
 
     
     return (
@@ -78,7 +78,7 @@ const Project = ({ hashlink, title, description, mainImg, types, tags, viewCode,
                     </div>
                 </div>
             </div>
-            <div className={`${viewDetails ? "project-details" : "hidden-details"} ${resizing ? "no-transition" : "transition"}`} ref={projectDetails} style={{height: detailsHeight }}>
+            <div className={`${viewDetails ? "project-details" : "hidden-details"} ${resizing ? "no-transition" : ""}`} ref={projectDetails}>
                 <div className="project-details-content" ref={projectDetailsContent}>
                     <div className="detail-section">
                         <h4>The Project</h4>

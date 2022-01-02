@@ -1134,7 +1134,7 @@ h4 {
 }
 
 .project-details {
-  padding: 0 0 10px 0;
+  padding: 0 0 100px 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: white;
@@ -1143,11 +1143,8 @@ h4 {
   position: relative;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
-}
-
-.transition {
-  -webkit-transition: all 1.5s ease-in;
-  transition: all 1.5s ease-in;
+  -webkit-transition: none;
+  transition: none;
 }
 
 .project-details-content {

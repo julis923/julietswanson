@@ -836,17 +836,14 @@ h4 {
 }
 
 .project-details {
-    padding: 0 0 10px 0;
+    padding: 0 0 100px 0;
     box-sizing: border-box;
     background-color: white;
     margin-bottom: 0px !important;
     overflow: hidden;
     position: relative;
     box-sizing: content-box;
-}
-
-.transition {
-    transition: all 1.5s ease-in;
+    transition: none;
 }
 
 
