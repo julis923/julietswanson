@@ -2,7 +2,7 @@
   "name": "portfolio-website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://julis923.github.io/julietswanson",
+  "homepage": "https://julis923.github.io/julietswanson",
   "dependencies": {
     "@testing-library/jest-dom": "^5.15.0",
     "@testing-library/react": "^11.2.7",
