@@ -8,7 +8,9 @@ const ParallaxBg = ({ classes, resizing, mobileNav, bg }) => {
 
     useEffect(() => {
         const tl = gsap.timeline()
-        tl.fromTo(wipeaway.current, { left: 0 }, { right: '100vw', left: "auto" })
+        tl.to(wipeaway.current, { display: "block" })
+        .fromTo(wipeaway.current, { right: 0 }, { left: "auto", right: '100vw', duration: 2, ease: "elastic" })
+        .to(wipeaway.current, {display: "none", delay: 5})
     }, [tl])
 
     return (

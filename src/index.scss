@@ -88,6 +88,7 @@ h4 {
     }
     @media only screen and (max-width: 440px) {
         padding: 40px;
+        height: 70vh;
     }
     a {
         text-decoration: none;
@@ -289,10 +290,10 @@ h4 {
     cursor: pointer;
     z-index: 12;
     div {
-        height: 3px;
-        border-radius: 5px;
-        margin-bottom: 5px;
-        width: 30px;
+        height: 2px;
+        border-radius: 4px;
+        margin-bottom: 4px;
+        width: 24px;
         background-color: $primary-orange;
         transition: all 0.2s ease-in-out;
     }
@@ -326,17 +327,18 @@ h4 {
 .mobile-nav-expanded {
     position: fixed;
     top: 0;
-    right: -100vw;
-    width: 100vw;
+    right: 0;
+    width: 0;
+    overflow: hidden;
     height: 100vh;
     background-color: $primary-yellow;
-    transition: all 0.5s ease-in-out;
+    transition: width 0.5s ease-in-out;
     z-index: 10;
     overflow: hidden;
 }
 
 .mobile-nav-expanded-visible {
-    right: 0;
+    width: 100vw;
     transition: all 0.5s ease-in-out;
 }
 
@@ -386,7 +388,7 @@ h4 {
 
 
 .top-mobile-div {
-    transform: rotate(45deg) translateY(11px) translateX(1px);
+    transform: rotate(45deg) translateY(7.5px) translateX(-0.2px);
     background-color: white !important;
 }
 
@@ -395,7 +397,7 @@ h4 {
 }
 
 .bottom-mobile-div {
-    transform: rotate(-45deg) translateY(-10px);
+    transform: rotate(-45deg) translateY(-8.5px) translateX(1.5px); 
     background-color: white !important;
 }
 
@@ -421,6 +423,8 @@ h4 {
         }
         @media only screen and (max-width: 440px) {
             margin-left: 40px;
+            font-size: 50px;
+            margin-top: -76px;
         }
     }
 }
@@ -503,6 +507,8 @@ h4 {
         }
         @media only screen and (max-width: 440px) {
             margin-right: 40px;
+            font-size: 50px;
+            margin-top: -108px
         }
     }
     .projects-header {
@@ -835,14 +841,16 @@ h4 {
 }
 
 .project-details {
-    padding: 0 0 100px 0;
+    padding: 20px 0 100px 0;
     box-sizing: border-box;
     background-color: white;
     margin-bottom: 0px !important;
     overflow: hidden;
     position: relative;
     box-sizing: content-box;
-    transition: none;
+    opacity: 1;
+    height: auto;
+    transition: opacity 1s ease;
 }
 
 
@@ -995,8 +1003,9 @@ h4 {
 }
 
 .hidden-details {
-    height: 0 !important;
+    opacity: 0;
     overflow: hidden;
+    height: 0;
     h4 {
         color: $primary-orange
     }
@@ -1024,15 +1033,12 @@ h4 {
     position: absolute;
     width: 100vw;
     height: 110vh;
-    right: 0;
     top: 0;
     background-color: white;
     z-index: -1;
     transition: all 2s;
-    transition-delay: 3s;
-    @media only screen and (max-width: $mobile-breakpoint) {
-        transition-delay: 2s;
-    }
+    transition-delay: 1s;
+    display: none;
 }
 
 .wipeaway-2 {
@@ -1075,6 +1081,14 @@ h4 {
     @media only screen and (min-height: 1300px) {
         background-size: 80vh;
     }
+    @media only screen and (max-width: 499px) {
+        background-attachment: scroll;
+        background-position-y: top;
+    }
+    @media only screen and (max-height: 499px) {
+        background-attachment: scroll;
+        background-size: 90vh;
+    }
 }
 
 .homepage-bg-2 {
@@ -1104,6 +1118,12 @@ h4 {
     @media only screen and (max-height: 650px) and (min-width: 650px) {
         background-size: 100vh;
         background-position-y: bottom;
+    }
+    @media only screen and (max-width: 499px) {
+        background-attachment: scroll;
+    }
+    @media only screen and (max-height: 499px) {
+        background-attachment: scroll;
     }
 
 }
@@ -1136,6 +1156,12 @@ h4 {
     @media only screen and (max-height: 650px) and (min-width: 650px) {
         background-size: 100vh;
     }
+    @media only screen and (max-width: 499px) {
+        background-attachment: scroll;
+    }
+    @media only screen and (max-height: 499px) {
+        background-attachment: scroll;
+    }
 }
 
 .contact-section {
@@ -1159,6 +1185,8 @@ h4 {
         }
         @media only screen and (max-width: 440px) {
             margin-left: 40px;
+            font-size: 50px;
+            margin-top: -77px;
         }
     }
 }
@@ -1343,6 +1371,12 @@ h4 {
         background-position-x: center;
         background-position-y: 100px;
         height: 250px;
+    }
+    @media only screen and (max-width: 499px) {
+        background-attachment: scroll;
+    }
+    @media only screen and (max-height: 499px) {
+        background-attachment: scroll;
     }
 }
 

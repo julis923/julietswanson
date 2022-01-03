@@ -14,8 +14,7 @@ const Project = ({ hashlink, title, description, mainImg, types, tags, viewCode,
 
     const projectWrapper = useRef();
     const projectDetails = useRef();
-    const projectDetailsContent = useRef();
-    const tl = useRef();
+
 
     const handleProjectView = () => {
         setViewDetails(!viewDetails)
@@ -26,21 +25,6 @@ const Project = ({ hashlink, title, description, mainImg, types, tags, viewCode,
         }
     }
 
-    useEffect(() => {
-        console.log(viewDetails)
-        if (!viewDetails) {
-            tl.current = gsap.timeline()
-            .to(projectDetails.current, {height: 0, duration: 1.5})
-        } else {
-            tl.current = gsap.timeline()
-            .to(projectDetails.current, {height: projectDetailsContent.current.clientHeight, transition: "all 1.2s ease", duration: 1.2 })
-            .to(projectDetails.current, {height: 'auto', transition: "none"})
-        }
-    }, [viewDetails])
-
-    useEffect(() => {
-        
-    }, [resizing, viewDetails])
 
     
     return (
@@ -68,7 +52,7 @@ const Project = ({ hashlink, title, description, mainImg, types, tags, viewCode,
                         <div className="color-bg-2"></div>
                         <img src={macbook} alt="macbook" className="macbook"/>
                         {mainImg.type === 'video' ? 
-                            <video className="video" loop autoPlay muted >
+                            <video className="video" loop autoPlay muted webkit-playsinline="true" playsInline >
                                 <source src={mainImg.content} type="video/mp4"></source>
                                 Your browser does not support this video
                             </video>
@@ -80,7 +64,7 @@ const Project = ({ hashlink, title, description, mainImg, types, tags, viewCode,
                 </div>
             </div>
             <div className={`${viewDetails ? "project-details" : "hidden-details"} ${resizing ? "no-transition" : ""}`} ref={projectDetails}>
-                <div className="project-details-content" ref={projectDetailsContent}>
+                <div className="project-details-content">
                     <div className="detail-section">
                         <h4>The Project</h4>
                         {project.map((text, i) => {
