@@ -1,6 +1,7 @@
 
 import projects from "../projectData";
 import Project from "./project";
+import { HashLink as Link } from 'react-router-hash-link';
 
 const HomepageProjects = ({ resizing, setResizing }) => {
 
@@ -10,7 +11,7 @@ const HomepageProjects = ({ resizing, setResizing }) => {
             <h2 id="projects">projects</h2>
             <div className="projects-header">
                 <h3>Featured Projects</h3>
-                <p>Explore my featured projects below, or <a href="/projects">browse all of my projects here.</a> Most projects involve aspects of both design and programming/development.</p>
+                <p>Explore my featured projects below, or <Link to="/projects">browse all of my projects here.</Link> Most projects involve aspects of both design and programming/development.</p>
             </div>
             <div className="projects-container">
                 {

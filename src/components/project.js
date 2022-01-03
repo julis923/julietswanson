@@ -1,13 +1,11 @@
 import macbook from '../assets/macbook-outline.png'
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef } from 'react';
 import ProjectButtons from './projectButtons';
 import ProjectGallery from './projectGallery';
 import ChevronSvg from './chevronSvg';
-import { gsap } from 'gsap';
 
 
-
-const Project = ({ hashlink, title, description, mainImg, types, tags, viewCode, viewLive, project, projectProcess, details, resizing, setCurrentHash }) => {
+const Project = ({ hashlink, title, description, mainImg, types, viewCode, viewLive, project, projectProcess, details, resizing }) => {
     
     const [viewDetails, setViewDetails] = useState(false)
     const [toggler, setToggler] = useState(false)
@@ -63,8 +61,8 @@ const Project = ({ hashlink, title, description, mainImg, types, tags, viewCode,
                     </div>
                 </div>
             </div>
-            <div className={`${viewDetails ? "project-details" : "hidden-details"} ${resizing ? "no-transition" : ""}`} ref={projectDetails}>
-                <div className="project-details-content">
+            <div className={`${viewDetails ? "project-details" : "hidden-details"} ${resizing ? "no-transition" : ""}`}>
+                <div className="project-details-content" ref={projectDetails}>
                     <div className="detail-section">
                         <h4>The Project</h4>
                         {project.map((text, i) => {
@@ -107,7 +105,7 @@ const Project = ({ hashlink, title, description, mainImg, types, tags, viewCode,
                                                     : null
                                                 }
                                                 {
-                                                    item.link ? 
+                                                    item.link && viewDetails ? 
                                                     <div className="iframe-container">
                                                         <iframe title="figma wireframe" style={{border: "1px solid rgba(0, 0, 0, 0.1)"}} width="100%" height="450px" src={item.link} allowFullScreen></iframe>
                                                     </div>

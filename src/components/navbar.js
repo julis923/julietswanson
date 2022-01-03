@@ -12,6 +12,7 @@ const NavBar = ({ page, mobileNav, setMobileNav, resizing }) => {
         const body = document.querySelector('body');
         if (mobileNav) {
             body.classList.add('no-overflow');
+            body.scrollTo(0, 0)
         } else {
             body.classList.remove('no-overflow');
         }
@@ -39,7 +40,7 @@ const NavBar = ({ page, mobileNav, setMobileNav, resizing }) => {
                 <Link to="/#contact" ref={link3} smooth className={page === 'homepage' ? "homepage-header-nav-link askew-15" : ""}>contact</Link>
                 <a href={resume} ref={link4} target="_blank" rel="noreferrer" className={page === 'homepage' ? "homepage-header-nav-link askew-n15" : ""}>resume</a>
             </div>
-            <div className="mobile-nav-links" onClick={() => setMobileNav(!mobileNav)}>
+            <div className={`mobile-nav-links ${mobileNav ? 'mobile-nav-links-fixed' : ''}`} onClick={() => setMobileNav(!mobileNav)}>
                 <div className={mobileNav ? "top-mobile-div" : ""}></div>
                 <div className={mobileNav ? "center-mobile-div" : ""}></div>
                 <div className={mobileNav ? "bottom-mobile-div" : ""}></div>

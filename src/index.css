@@ -74,6 +74,7 @@ h4 {
           justify-content: space-between;
   padding: 60px 80px;
   height: 90vh;
+  min-height: 600px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -87,6 +88,7 @@ h4 {
 @media only screen and (max-width: 1080px) {
   .navbar {
     height: 90vh;
+    min-height: 500px;
   }
 }
 
@@ -96,10 +98,18 @@ h4 {
   }
 }
 
-@media only screen and (max-width: 440px) {
+@media only screen and (max-width: 499px) {
   .navbar {
+    min-height: 300px;
     padding: 40px;
-    height: 70vh;
+    height: 60vh;
+  }
+}
+
+@media only screen and (max-height: 499px) {
+  .navbar {
+    min-height: 300px;
+    height: 400px;
   }
 }
 
@@ -142,6 +152,14 @@ h4 {
   }
 }
 
+@media only screen and (max-height: 499px) {
+  .nav-name h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .nav-name h2 {
     font-size: 18px;
@@ -171,6 +189,21 @@ h4 {
 }
 
 @media only screen and (max-width: 1080px) {
+  .nav-name h1 {
+    color: #fd6a00;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 5px;
+    line-height: 40px;
+    font-size: 40px;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+}
+
+@media only screen and (max-height: 499px) {
   .nav-name h1 {
     color: #fd6a00;
     text-decoration: none;
@@ -381,7 +414,7 @@ h4 {
 
 .mobile-nav-links {
   display: none;
-  margin-top: 16px;
+  margin-top: 18px;
   cursor: pointer;
   z-index: 12;
 }
@@ -399,6 +432,23 @@ h4 {
 @media only screen and (max-width: 1080px) {
   .mobile-nav-links {
     display: block;
+  }
+}
+
+.mobile-nav-links-fixed {
+  position: fixed;
+  right: 80px;
+}
+
+@media only screen and (max-width: 800px) {
+  .mobile-nav-links-fixed {
+    right: 60px;
+  }
+}
+
+@media only screen and (max-width: 499px) {
+  .mobile-nav-links-fixed {
+    right: 40px;
   }
 }
 
@@ -560,7 +610,7 @@ h4 {
   }
 }
 
-@media only screen and (max-width: 440px) {
+@media only screen and (max-width: 499px) {
   .homepage-about h2 {
     margin-left: 40px;
     font-size: 50px;
@@ -596,7 +646,7 @@ h4 {
   }
 }
 
-@media only screen and (max-width: 440px) {
+@media only screen and (max-width: 499px) {
   .homepage-about-copy .content {
     padding: 60px 40px 50px 40px;
   }
@@ -635,6 +685,12 @@ h4 {
     height: 80vw;
     max-height: 450px;
     padding-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 499px) {
+  .headshot-container {
+    height: 70vw;
   }
 }
 
@@ -678,7 +734,7 @@ h4 {
   }
 }
 
-@media only screen and (max-width: 440px) {
+@media only screen and (max-width: 499px) {
   .homepage-projects h2 {
     margin-right: 40px;
     font-size: 50px;
@@ -722,7 +778,7 @@ h4 {
   }
 }
 
-@media only screen and (max-width: 440px) {
+@media only screen and (max-width: 499px) {
   .homepage-projects .projects-header {
     padding: 60px 40px 50px 40px;
   }
@@ -845,7 +901,7 @@ h4 {
 
 @media only screen and (max-width: 499px) {
   .project-text {
-    width: 100%;
+    width: 100vw;
     padding: 0 40px;
   }
 }
@@ -1385,6 +1441,7 @@ h4 {
   width: 100vw;
   z-index: -1;
   min-height: 100vh;
+  overflow: hidden;
 }
 
 .wipeaway {
@@ -1401,10 +1458,6 @@ h4 {
   display: none;
 }
 
-.wipeaway-2 {
-  background-color: #fd6a00;
-}
-
 .homepage-bg-1 {
   width: 100vw;
   height: 100vh;
@@ -1416,42 +1469,20 @@ h4 {
   background-attachment: fixed;
   background-position: right;
   background-repeat: no-repeat;
-  background-size: 70vw;
+  background-size: 115vh;
   z-index: -2;
   background-image: url("../src/assets/homepage-bg_1.png");
 }
 
-@media only screen and (max-width: 1200px) and (min-height: 600px) {
+@media only screen and (max-width: 1080px) and (min-height: 600px) {
   .homepage-bg-1 {
-    background-size: 800px;
+    background-size: 720px;
   }
 }
 
 @media only screen and (max-width: 650px) {
   .homepage-bg-1 {
-    background-size: 100vw;
-  }
-}
-
-@media only screen and (max-width: 650px) and (min-height: 600px) {
-  .homepage-bg-1 {
-    background-size: 120vw;
-    background-position: center;
-  }
-}
-
-@media only screen and (max-width: 700px) and (max-height: 450px) {
-  .homepage-bg-1 {
-    background-size: 100vh;
-    background-position-y: bottom;
-    background-position-x: right;
-  }
-}
-
-@media only screen and (max-height: 650px) and (min-width: 650px) {
-  .homepage-bg-1 {
-    background-size: 100vh;
-    background-position-y: bottom;
+    background-size: 110vw;
   }
 }
 
@@ -1465,13 +1496,21 @@ h4 {
   .homepage-bg-1 {
     background-attachment: scroll;
     background-position-y: top;
+    background-size: 400px;
   }
 }
 
 @media only screen and (max-height: 499px) {
   .homepage-bg-1 {
     background-attachment: scroll;
-    background-size: 90vh;
+    background-size: 400px;
+    background-position-y: top;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .homepage-bg-1 {
+    background-size: 300px;
   }
 }
 
@@ -1526,6 +1565,7 @@ h4 {
 @media only screen and (max-height: 499px) {
   .homepage-bg-2 {
     background-attachment: scroll;
+    background-size: 90vh;
   }
 }
 
@@ -1574,12 +1614,14 @@ h4 {
 @media only screen and (max-width: 499px) {
   .homepage-bg-3 {
     background-attachment: scroll;
+    background-size: 90vw;
   }
 }
 
 @media only screen and (max-height: 499px) {
   .homepage-bg-3 {
     background-attachment: scroll;
+    background-size: 90vh;
   }
 }
 
@@ -1611,7 +1653,7 @@ h4 {
   }
 }
 
-@media only screen and (max-width: 440px) {
+@media only screen and (max-width: 499px) {
   .contact-section h2 {
     margin-left: 40px;
     font-size: 50px;
@@ -1636,7 +1678,7 @@ h4 {
   }
 }
 
-@media only screen and (max-width: 440px) {
+@media only screen and (max-width: 499px) {
   .contact-section-container {
     padding: 80px 50px 80px 50px;
   }
@@ -1659,7 +1701,7 @@ h4 {
   font-size: 18px;
 }
 
-@media only screen and (max-width: 440px) {
+@media only screen and (max-width: 499px) {
   .contact-item a, .contact-item p {
     font-size: 16px;
   }
@@ -1676,7 +1718,7 @@ h4 {
   margin-right: 10px;
 }
 
-@media only screen and (max-width: 440px) {
+@media only screen and (max-width: 499px) {
   .contact-icon {
     width: 25px;
   }
@@ -1686,6 +1728,7 @@ h4 {
   height: 180px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  min-height: 0;
   background-color: #fd6a00;
 }
 
@@ -1720,6 +1763,7 @@ h4 {
 .projects-page .projects-container {
   background-color: white;
   margin-top: -120px;
+  padding-bottom: 300px;
 }
 
 .projects-page .projects-container h4, .projects-page .projects-container h3, .projects-page .projects-container li {
@@ -1788,10 +1832,11 @@ h4 {
 }
 
 .projects-page-header h2 {
-  font-size: 70px;
+  font-size: 60px;
   margin-left: 76px;
-  color: white;
-  margin-top: -270px;
+  color: #fd6a00;
+  margin-top: -30px;
+  margin-bottom: 40px;
 }
 
 @media only screen and (max-width: 800px) {
@@ -1800,7 +1845,7 @@ h4 {
   }
 }
 
-@media only screen and (max-width: 440px) {
+@media only screen and (max-width: 499px) {
   .projects-page-header h2 {
     margin-left: 36px;
   }
@@ -1816,7 +1861,7 @@ h4 {
 .projects-banner {
   position: relative;
   width: 100vw;
-  height: 350px;
+  height: 300px;
   background-color: #fd6a00;
 }
 
@@ -1830,15 +1875,15 @@ h4 {
 .projects-bg {
   position: absolute;
   background-image: url("../src/assets/projects-bg.png");
-  background-size: 1600px;
+  background-size: 1300px;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position-x: right;
-  background-position-y: 150px;
-  opacity: 0.7;
+  background-position-y: 140px;
+  opacity: 0.9;
   width: 100vw;
   margin-top: -1px;
-  height: 350px;
+  height: 300px;
 }
 
 @media only screen and (max-width: 800px) {
@@ -1868,12 +1913,14 @@ h4 {
 @media only screen and (max-width: 499px) {
   .projects-bg {
     background-attachment: scroll;
+    background-position-y: top;
   }
 }
 
 @media only screen and (max-height: 499px) {
   .projects-bg {
     background-attachment: scroll;
+    background-position-y: top;
   }
 }
 

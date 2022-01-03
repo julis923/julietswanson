@@ -20,7 +20,7 @@ function App({ page }) {
     if (window.location.pathname !== '/projects' || window.location.pathname !== '/' ) {
         navigate('/')
     }
-}, [])
+}, [navigate])
 
 
   return (

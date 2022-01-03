@@ -6,15 +6,13 @@ import Project from "../components/project";
 import { NavHashLink } from 'react-router-hash-link';
 import { useNavigate } from 'react-router-dom';
 import ChevronSvg from '../components/chevronSvg';
-import setHash from '../components/viewFunctions';
+import setProjectBar from '../components/viewFunctions';
 import filterIcon from '../assets/filter-icon.png'
 
 
 const Projects = () => {
 
     const [mobileNav, setMobileNav] = useState(false)
-    const [currentFilter, setCurrentFilter] = useState('view all')
-    const [currentHash, setCurrentHash] = useState(null)
     const [projectNav, setProjectNav] = useState(false)
     const [selectedFilters, setSelectedFilters] = useState([])
     const [filteredProjects, setFilteredProjects] = useState(projects)
@@ -43,7 +41,7 @@ const Projects = () => {
         if (window.location.pathname !== '/projects' || window.location.pathname !== '/' ) {
             navigate('/projects')
         }
-    }, [])
+    }, [navigate])
 
     useEffect(() => {
             if (selectedFilters[0]) {
@@ -57,7 +55,6 @@ const Projects = () => {
                             if (!array.includes(project) && (matches === selectedFilters.length)) {
                                 array.push(project)
                                 setFilteredProjects(array)
-                                console.log(filteredProjects[0])
                                 let top = document.getElementById(filteredProjects[0].hashlink)
                                 top.scrollIntoView({behavior: "smooth"})
                             }
@@ -77,11 +74,10 @@ const Projects = () => {
     }, [])
 
 
-
     useEffect(() => {
         if (window.location.pathname !== '/') {
             window.addEventListener('scroll', () => {
-                setHash(projects, setCurrentHash, setProjectNav, setMobileFilters, setViewProjects)       
+                setProjectBar(projects, setProjectNav, setMobileFilters, setViewProjects)       
             })
             window.addEventListener('click', (e) => {
                 
@@ -112,15 +108,10 @@ const Projects = () => {
             </div>
             <div className={`${projectNav ? "projects-menu-fixed" : "projects-menu-fixed no-transition invisible no-pointer-events"} ${resizing ? "no-transition" : ""} `}>
                     <div className="hashlinks-menu" id="view-projects">
-                        {filteredProjects.map((project, i) => {
-                            return project.hashlink === currentHash ? 
-                                <div className="current-hash-container" id="view-project-container" onClick={() => setViewProjects(!viewProjects)} key={`${i}-current-hash-container`}>
-                                    <p className="current-hash">{project.title}</p>
-                                    <ChevronSvg fill="white" setToggler={setToggler} viewProjects={viewProjects} className="chevron" id="chevron"/>
-                                </div>
-                                :
-                                null
-                        })}
+                        <div className="current-hash-container" id="view-project-container" onClick={() => setViewProjects(!viewProjects)}>
+                            <p className="current-hash">Projects</p>
+                            <ChevronSvg fill="white" setToggler={setToggler} viewProjects={viewProjects} className="chevron" id="chevron"/>
+                        </div>      
                         <div className={viewProjects ? "hashlinks-dropdown" : "hashlinks-dropdown invisible no-pointer-events"}>
                             {filteredProjects.map((project, i) => {
                                 const to = `/projects/#${project.hashlink}`
@@ -129,7 +120,8 @@ const Projects = () => {
                                         smooth 
                                         key={`${project.title}${i}-hashlink`}
                                         onClick={() => setViewProjects(false)}
-                                        className='hashlink'>
+                                        className='hashlink'
+                                        >  
                                         {project.title}
                                     </NavHashLink> 
                             })}
@@ -167,15 +159,12 @@ const Projects = () => {
             <div className="projects-container projects-page-container">
             
                     {
-                        filteredProjects.map((project, i) => {
-                            if (project.tags.includes(currentFilter) || currentFilter === 'view all') {
-                                return (
-                                        <div className="project-container" key={`project-page-project-${project.title}-${i}`}>
-                                            <Project hashlink={project.hashlink} title={project.title} description={project.description} mainImg={project.mainImg} types={project.types} tags={project.tags} viewCode={project.viewCode} viewLive={project.viewLive} project={project.project} projectProcess={project.projectProcess} details={project.details} resizing={resizing} setResizing={setResizing} setCurrentHash={setCurrentHash} key={`homepage-project-${project.title}-${i}`} />                      
-                                        </div>
-                            )
-                            } else return null;
-                                  
+                        filteredProjects.map((project, i) => { 
+                            return (
+                                    <div className="project-container" key={`project-page-project-${project.title}-${i}`}>
+                                        <Project hashlink={project.hashlink} title={project.title} description={project.description} mainImg={project.mainImg} types={project.types} tags={project.tags} viewCode={project.viewCode} viewLive={project.viewLive} project={project.project} projectProcess={project.projectProcess} details={project.details} resizing={resizing} setResizing={setResizing} key={`homepage-project-${project.title}-${i}`} />                      
+                                    </div>
+                            )  
                         })
                     }
                     

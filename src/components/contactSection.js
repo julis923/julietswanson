@@ -11,7 +11,7 @@ const ContactSection = () => {
             <div className="contact-section-container">
                 <div className="contact-item">
                     <img className="contact-icon" src={emailIcon} alt="email icon"/>
-                    <p>juliswanson@gmail.com</p>
+                    <a href="mailto: juliswanson@gmail.com">juliswanson@gmail.com</a>
                 </div>
                 <div className="contact-item">
                     <img className="contact-icon" src={linkedinIcon} alt="linkedin icon"/>
