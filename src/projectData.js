@@ -68,7 +68,7 @@ const projects = [
             "Designed on Figma",
             "Built with React, Node.js/Express, MongoDB, AWS S3, and Sass",
             "Client-side routing (via React Router) delivers a seamless, mobile-app-like user experience",
-            "PDF generation via Puppeteer (Headless Chrome",
+            "PDF generation via Puppeteer (Headless Chrome)",
             "Fully responsive, cross-browser-compatible and mobile-friendly",
             "Accessible and SEO-friendly",
 

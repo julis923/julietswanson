@@ -6,11 +6,13 @@ import { useNavigate } from 'react-router-dom';
 import ParallaxBg from './components/parallaxBg';
 import resizeFunction from './components/resizeFunction';
 import ContactSection from './components/contactSection';
+import { iOS } from './components/viewFunctions';
 
 function App({ page }) {
 
   const [mobileNav, setMobileNav] = useState(false)
   const [resizing, setResizing] = useState(false)
+
 
   resizeFunction(setResizing, setMobileNav)
 
@@ -26,14 +28,14 @@ function App({ page }) {
   return (
     <div className={`App ${mobileNav ? "no-overflow" : ""} ${resizing ? "no-transition" : ""}`}>
       <NavBar page={page} mobileNav={mobileNav} setMobileNav={setMobileNav} resizing={resizing} />
-      <ParallaxBg classes={'homepage-bg-1'} resizing={resizing} mobileNav={mobileNav} bg={1}/>
+      <ParallaxBg classes={'homepage-bg-1'} resizing={resizing} mobileNav={mobileNav} bg={1} iOS={iOS()}/>
       <HomepageAbout />
       <div style={{position: 'relative', height: '60vh', backgroundColor: 'rgb(253, 106, 0)', zIndex: '-1'}}>
-        <ParallaxBg classes={'homepage-bg-2'} mobileNav={mobileNav} resizing={resizing} bg={2}/>
+        <ParallaxBg classes={'homepage-bg-2'} mobileNav={mobileNav} resizing={resizing} bg={2} iOS={iOS()}/>
       </div>
       <HomepageProjects resizing={resizing} setResizing={setResizing} />
       <div style={{position: 'relative', height: '60vh', backgroundColor: '#ffba0d', zIndex: '-1'}}>
-        <ParallaxBg classes={'homepage-bg-3'} mobileNav={mobileNav} resizing={resizing} bg={3}/>
+        <ParallaxBg classes={'homepage-bg-3'} mobileNav={mobileNav} resizing={resizing} bg={3} iOS={iOS()}/>
       </div>
       <ContactSection />
     </div>

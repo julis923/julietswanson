@@ -6,7 +6,7 @@ import Project from "../components/project";
 import { NavHashLink } from 'react-router-hash-link';
 import { useNavigate } from 'react-router-dom';
 import ChevronSvg from '../components/chevronSvg';
-import setProjectBar from '../components/viewFunctions';
+import { setProjectBar } from '../components/viewFunctions';
 import filterIcon from '../assets/filter-icon.png'
 
 

@@ -42,7 +42,7 @@ const NavBar = ({ page, mobileNav, setMobileNav, resizing }) => {
             </div>
             <div className={`mobile-nav-links ${mobileNav ? 'mobile-nav-links-fixed' : ''}`} onClick={() => setMobileNav(!mobileNav)}>
                 <div className={mobileNav ? "top-mobile-div" : ""}></div>
-                <div className={mobileNav ? "center-mobile-div" : ""}></div>
+                <div className={mobileNav ? "center-mobile-div" : "center-div"}></div>
                 <div className={mobileNav ? "bottom-mobile-div" : ""}></div>
             </div>
             <div className={`mobile-nav-expanded  ${mobileNav ? "mobile-nav-expanded-visible" : ""} ${resizing ? "no-transition" : "" }`}>
