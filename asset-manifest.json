@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/julietswanson/static/css/main.4307612b.chunk.css",
-    "main.js": "/julietswanson/static/js/main.f6772f63.chunk.js",
-    "main.js.map": "/julietswanson/static/js/main.f6772f63.chunk.js.map",
+    "main.js": "/julietswanson/static/js/main.246c5876.chunk.js",
+    "main.js.map": "/julietswanson/static/js/main.246c5876.chunk.js.map",
     "runtime-main.js": "/julietswanson/static/js/runtime-main.5fbf3093.js",
     "runtime-main.js.map": "/julietswanson/static/js/runtime-main.5fbf3093.js.map",
     "static/js/2.bf7a9022.chunk.js": "/julietswanson/static/js/2.bf7a9022.chunk.js",
@@ -26,15 +26,15 @@
     "static/media/mystyler-video.4fac789b.mp4": "/julietswanson/static/media/mystyler-video.4fac789b.mp4",
     "static/media/mystyler-wireframe.eab6d15a.png": "/julietswanson/static/media/mystyler-wireframe.eab6d15a.png",
     "static/media/railtime-video.9729891b.mp4": "/julietswanson/static/media/railtime-video.9729891b.mp4",
-    "static/media/resumes-1.4603be6b.png": "/julietswanson/static/media/resumes-1.4603be6b.png",
-    "static/media/resumes-2.c699b677.png": "/julietswanson/static/media/resumes-2.c699b677.png",
-    "static/media/resumes-3.ea001de2.png": "/julietswanson/static/media/resumes-3.ea001de2.png",
+    "static/media/resumes-1.3582c941.png": "/julietswanson/static/media/resumes-1.3582c941.png",
+    "static/media/resumes-2.e764a516.png": "/julietswanson/static/media/resumes-2.e764a516.png",
+    "static/media/resumes-3.518f2792.png": "/julietswanson/static/media/resumes-3.518f2792.png",
     "static/media/wholesome-video.e0d479b7.mp4": "/julietswanson/static/media/wholesome-video.e0d479b7.mp4"
   },
   "entrypoints": [
     "static/js/runtime-main.5fbf3093.js",
     "static/js/2.bf7a9022.chunk.js",
     "static/css/main.4307612b.chunk.css",
-    "static/js/main.f6772f63.chunk.js"
+    "static/js/main.246c5876.chunk.js"
   ]
 }
