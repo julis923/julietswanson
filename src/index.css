@@ -576,6 +576,10 @@ h4 {
   opacity: 0;
 }
 
+.center-div {
+  height: 3px !important;
+}
+
 .bottom-mobile-div {
   -webkit-transform: rotate(-45deg) translateY(-8.5px) translateX(1.5px);
           transform: rotate(-45deg) translateY(-8.5px) translateX(1.5px);

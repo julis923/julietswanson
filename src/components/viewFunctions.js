@@ -24,7 +24,6 @@ const iOS = () => {
       'iPhone',
       'iPod'
     ].includes(navigator.platform)
-    || (navigator.userAgent.includes("Mac") && "ontouchend" in document)
   }
 
 export {
