@@ -231,7 +231,7 @@ const projects = [
         viewCode: [true, 'View Hi-Fi Mockup', 'https://www.figma.com/file/5AM7KuEdUDRn5w66FbgMYN/RailTime-HiFi?node-id=0%3A1'],
         viewLive: [true, 'View Prototype', 'https://www.figma.com/proto/5AM7KuEdUDRn5w66FbgMYN/RailTime-HiFi?page-id=0%3A1&node-id=19%3A42&viewport=241%2C48%2C0.15&scaling=scale-down&starting-point-node-id=19%3A42&show-proto-sidebar=1'],
         project: [
-            "I challenged myself to design a logo and landing page hero for a snackbar company, and then built and deployed it as a demo.",
+            "I designed and branded an app which allows users to quickly and easily set an alert for their stop on public transportation, plus save alerts to make future trips a breeze.",
         ],
         projectProcess: [
             {
