@@ -2,9 +2,7 @@ import { gsap } from 'gsap';
 import React, { useEffect, useRef, useState } from 'react';
 
 const ParallaxBg = ({ classes, resizing, mobileNav, bg, iOS }) => {
-
-    console.log(iOS)
- 
+     
     const wipeaway = useRef();
     const tl = useRef();
 

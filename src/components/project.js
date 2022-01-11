@@ -5,8 +5,11 @@ import ProjectGallery from './projectGallery';
 import ChevronSvg from './chevronSvg';
 
 
-const Project = ({ hashlink, title, description, mainImg, types, viewCode, viewLive, project, projectProcess, details, resizing }) => {
-    
+const Project = ({ hashlink, title, description, mainImg, types, viewCode, viewLive, viewDemo, project, projectProcess, details, resizing }) => {
+
+    console.log('on project component:', viewDemo)
+
+
     const [viewDetails, setViewDetails] = useState(false)
     const [toggler, setToggler] = useState(false)
 
@@ -36,7 +39,7 @@ const Project = ({ hashlink, title, description, mainImg, types, viewCode, viewL
                             return <li key={`${title}-${type}`}>{type}</li>
                         })}
                     </ul>
-                    <ProjectButtons viewDetails={viewDetails} viewCode={viewCode} viewLive={viewLive} resizing={resizing}/>
+                    <ProjectButtons viewDetails={viewDetails} viewCode={viewCode} viewLive={viewLive} viewDemo={viewDemo} title={title} resizing={resizing}/>
                     <div className="toggle-container" onClick={() => handleProjectView()} onMouseOver={() => setToggler(true)} onMouseLeave={() => setToggler(false)}>
                         <p className={`details-toggle ${toggler ? 'details-toggle-focus' : ''} ${viewDetails ? 'details-toggle-view' : ''}`}>{viewDetails ? 'Hide' : 'Show'} Full Details</p>
                         <ChevronSvg fill={toggler || viewDetails ? "#FFBD13" : "rgb(253, 106, 0)"} setToggler={setToggler} viewDetails={viewDetails} />
@@ -129,7 +132,7 @@ const Project = ({ hashlink, title, description, mainImg, types, viewCode, viewL
                             }
                         </ul>
                     </div>
-                    <ProjectButtons viewDetails={viewDetails} viewCode={viewCode} viewLive={viewLive}/>
+                    <ProjectButtons viewDetails={viewDetails} viewCode={viewCode} viewLive={viewLive} viewDemo={viewDemo}/>
                 </div>
             </div>
         </>

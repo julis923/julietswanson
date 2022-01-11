@@ -27,6 +27,7 @@ const projects = [
         hashlink: "myStyler",
         viewCode: [true, null, 'https://github.com/julis923/myStyler'],
         viewLive: [true, null, 'https://mystyler.herokuapp.com/'],
+        viewDemo: [true, null, 'https://mystyler.herokuapp.com/create-demo'],
         project: [
             "myStyler is an app that allows for flexible, iterable, and fun resume creation. It offers a breadth of stylistic choices, plus the ability to preview the resume as data is being entered (thanks, React)! The app responsively sizes text to fit on the resume to account for dynamic input from the user.",
             "The app quickly generates a screen-readable and hyperlinked PDF and saves resumes to users' accounts for future edits and iterations."
@@ -88,6 +89,7 @@ const projects = [
         hashlink: "icsi",
         viewCode: [false, 'Code Private'],
         viewLive: [false, 'Site in Development'],
+        viewDemo: [false],
         project: [
             "I designed a modern, streamlined, and bold user experience + interface for a client in the construction industry. I then built out the front end with my project supervisor.",
         ],
@@ -131,6 +133,7 @@ const projects = [
         hashlink: "wholesome",
         viewCode: [false, 'Code Private'],
         viewLive: [false, 'Site in Development'],
+        viewDemo: [false],
         project: [
             "I inherited a set of UX/UI mockups from another designer, which the client wanted to closer align with Wholesome Learning's new branding. I maintained much of the existing architecture, but overhauled the UI to create a more whimsical, welcoming, and playful user experience.",
         ],
@@ -174,6 +177,7 @@ const projects = [
         hashlink: "barebites",
         viewCode: [true, null, 'https://github.com/julis923/Barebites'],
         viewLive: [true, null, 'https://julis923.github.io/Barebites'],
+        viewDemo: [false],
         project: [
             "I challenged myself to design a logo and landing page hero for a snackbar company, and then built and deployed it as a demo.",
         ],
@@ -230,6 +234,7 @@ const projects = [
         hashlink: "railtime",
         viewCode: [true, 'View Hi-Fi Mockup', 'https://www.figma.com/file/5AM7KuEdUDRn5w66FbgMYN/RailTime-HiFi?node-id=0%3A1'],
         viewLive: [true, 'View Prototype', 'https://www.figma.com/proto/5AM7KuEdUDRn5w66FbgMYN/RailTime-HiFi?page-id=0%3A1&node-id=19%3A42&viewport=241%2C48%2C0.15&scaling=scale-down&starting-point-node-id=19%3A42&show-proto-sidebar=1'],
+        viewDemo: [false],
         project: [
             "I designed and branded an app which allows users to quickly and easily set an alert for their stop on public transportation, plus save alerts to make future trips a breeze.",
         ],

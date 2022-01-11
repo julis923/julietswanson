@@ -162,7 +162,7 @@ const Projects = () => {
                         filteredProjects.map((project, i) => { 
                             return (
                                     <div className="project-container" key={`project-page-project-${project.title}-${i}`}>
-                                        <Project hashlink={project.hashlink} title={project.title} description={project.description} mainImg={project.mainImg} types={project.types} tags={project.tags} viewCode={project.viewCode} viewLive={project.viewLive} project={project.project} projectProcess={project.projectProcess} details={project.details} resizing={resizing} setResizing={setResizing} key={`homepage-project-${project.title}-${i}`} />                      
+                                        <Project hashlink={project.hashlink} title={project.title} description={project.description} mainImg={project.mainImg} types={project.types} tags={project.tags} viewCode={project.viewCode} viewLive={project.viewLive} viewDemo={project.viewDemo} project={project.project} projectProcess={project.projectProcess} details={project.details} resizing={resizing} setResizing={setResizing} key={`homepage-project-${project.title}-${i}`} />                      
                                     </div>
                             )  
                         })
