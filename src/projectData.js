@@ -77,6 +77,50 @@ const projects = [
         
     },
     {
+        title: "Wholesome Learning Website",
+        description: "I was contracted to complete the UX/UI for a tutoring company's new, rebranded website. I developed the final web designs on Figma in accordance with branding and then built out the front end with the project supervisor.",
+        mainImg: {
+            type: 'video',
+            content: wholesomeVid,
+            alt: null,
+        },
+        types: ["UX/UI", "Front-End"],
+        tags: ["front-end", "ux/ui", "featured"],
+        hashlink: "wholesome",
+        viewCode: [false, 'Code Private'],
+        viewLive: [true, null, 'https://learnwholesomely.com/'],
+        viewDemo: [false],
+        project: [
+            "I inherited a set of UX/UI mockups from another designer, which the client wanted to closer align with Wholesome Learning's new branding. I maintained much of the existing architecture, but overhauled the UI to create a more whimsical, welcoming, and playful user experience.",
+        ],
+        projectProcess: [
+            {
+                step: "Hi-Fi Mockups",
+                description: [
+                    "I used the existing collateral and branding to create playful graphics and patterns that evoked the brand's emphasis on family-friendly, fun learning.",
+                    "Bright colors and whimsical shapes give the site a unique and welcoming appeal.",
+                    "Because the client provides their own content via Wordpress, each components is designed to be highly flexible and responsive to dynamic input.",
+                ],
+                images: [],
+                link: "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FFvIuQPkvWbQr3HiNxs32Yq%2FWholesome-Landing-Page-Mockups%3Fnode-id%3D0%253A1" 
+            },
+            {
+                step: "Frontend Development",
+                description: [
+                    "The frontend was built out with React and Sass. It was important to build scalable components and styles that would withstand the dynamic content provided by the client.",
+                    "Queries were made to the CMS using GraphQL."
+                ],
+                images: []
+            }
+        ],
+        details: [
+            "Designed on Figma",
+            "Fully responsive design optimized for dynamic content",
+            "Built with Next.js/Vercel",
+        ]
+        
+    },
+    {
         title: "ICSI Website",
         description: "A professional website designed for ICSI, a New York-based construction company. After completing the designs (as an independently contracted UX/UI designer), I assisted in building the website with Next.js and Wordpress Headless CMS.",
         mainImg: {
@@ -103,50 +147,6 @@ const projects = [
                 ],
                 images: [],
                 link: "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FvxUPlZNFGR4cHqPP0H6lZZ%2FICSI-Mockups%3Fnode-id%3D0%253A1"
-            },
-            {
-                step: "Frontend Development",
-                description: [
-                    "The frontend was built out with React and Sass. It was important to build scalable components and styles that would withstand the dynamic content provided by the client.",
-                    "Queries were made to the CMS using GraphQL."
-                ],
-                images: []
-            }
-        ],
-        details: [
-            "Designed on Figma",
-            "Fully responsive design optimized for dynamic content",
-            "Built with Next.js/Vercel",
-        ]
-        
-    },
-    {
-        title: "Wholesome Learning Website",
-        description: "I was contracted to complete the UX/UI for a tutoring company's new, rebranded website. I developed the final web designs on Figma in accordance with branding and then built out the front end with the project supervisor.",
-        mainImg: {
-            type: 'video',
-            content: wholesomeVid,
-            alt: null,
-        },
-        types: ["UX/UI", "Front-End"],
-        tags: ["front-end", "ux/ui", "featured"],
-        hashlink: "wholesome",
-        viewCode: [false, 'Code Private'],
-        viewLive: [false, 'Site in Development'],
-        viewDemo: [false],
-        project: [
-            "I inherited a set of UX/UI mockups from another designer, which the client wanted to closer align with Wholesome Learning's new branding. I maintained much of the existing architecture, but overhauled the UI to create a more whimsical, welcoming, and playful user experience.",
-        ],
-        projectProcess: [
-            {
-                step: "Hi-Fi Mockups",
-                description: [
-                    "I used the existing collateral and branding to create playful graphics and patterns that evoked the brand's emphasis on family-friendly, fun learning.",
-                    "Bright colors and whimsical shapes give the site a unique and welcoming appeal.",
-                    "Because the client provides their own content via Wordpress, each components is designed to be highly flexible and responsive to dynamic input.",
-                ],
-                images: [],
-                link: "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FFvIuQPkvWbQr3HiNxs32Yq%2FWholesome-Landing-Page-Mockups%3Fnode-id%3D0%253A1" 
             },
             {
                 step: "Frontend Development",
