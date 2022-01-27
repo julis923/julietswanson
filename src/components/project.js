@@ -7,9 +7,6 @@ import ChevronSvg from './chevronSvg';
 
 const Project = ({ hashlink, title, description, mainImg, types, viewCode, viewLive, viewDemo, project, projectProcess, details, resizing }) => {
 
-    console.log('on project component:', viewDemo)
-
-
     const [viewDetails, setViewDetails] = useState(false)
     const [toggler, setToggler] = useState(false)
 
@@ -58,7 +55,7 @@ const Project = ({ hashlink, title, description, mainImg, types, viewCode, viewL
                                 Your browser does not support this video
                             </video>
                             :
-                            <img src={mainImg.content} alt={mainImg.alt}/>
+                            <img src={mainImg.content} alt={mainImg.alt} className="project-image"/>
                         }
                         <div className="video-shadow" onClick={() => handleProjectView()} onMouseOver={() => setToggler(true)} onMouseLeave={() => setToggler(false)}></div>
                     </div>

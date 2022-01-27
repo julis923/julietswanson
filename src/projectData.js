@@ -11,6 +11,7 @@ import barebitesLofi2 from './assets/barebites-lofi-2.png'
 import barebitesHifi1 from './assets/barebites-hifi-1.png'
 import barebitesBranding from './assets/barebites-branding.png'
 import railtimeVid from './assets/railtime-video.mp4';
+import embueLanding from './assets/embue-landing.png';
 
 
 const projects = [
@@ -274,6 +275,58 @@ const projects = [
             "Wireframes, mockups and prototype designed on Figma",
             "Logo designed on Adobe Illustrator",
             "Built with Vanilla JS, CSS & HTML",
+        ]
+        
+    },
+    {
+        title: "Embue Landing Pages",
+        description: "Two landing pages for customers navigating to Embue Cacao (Custom Shopify Theme) from external links. The client wanted to include plenty of additional links and calls to action while maintaining the brand, look, and feel of the website.",
+        mainImg: {
+            type: 'image',
+            content: embueLanding,
+            alt: null,
+        },
+        types: ["UX/UI", "Front-End", "E-Commerce"],
+        tags: ["ux/ui", "front-end", "e-commerce"],
+        hashlink: "embueLanding",
+        viewCode: [true, 'View Hi-Fi Mockup', 'https://www.figma.com/file/xevGXYMG7yjFMMhTxbnv6F/Embue-Landing?node-id=32%3A222'],
+        viewLive: [false, 'Site in Development'],
+        viewDemo: [false],
+        project: [
+            "I designed the landing pages to include plenty of links and calls to action, plus text with important keywords to boost SEO. I then implemented the designs as custom shopify sections with reusable components to make building future landing pages a breeze for the client.",
+        ],
+        projectProcess: [
+            {
+                step: "Lo-Fi Wireframing",
+                description: [
+                    "I created one wireframe per landing page. I wanted the structure to be similar so that in development I could create and use resuable components.",
+                    "In order to boost SEO, each section includes important text, at least one internal link, and a call to action.",
+                ],
+                images: [],
+                link: 'https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F39UG38GVc74BeZ3ug8hx9v%2FEmbue-Lofi%3Fnode-id%3D0%253A1'
+            },
+            {
+                step: "Hi-Fi Mockups",
+                description: [
+                    "I designed re-usable CTA buttons and added images and on-brand colors to make the sections pop.", 
+                    "Additionally, I sourced and/or wrote copy for each section, keeping the text short and easily digestible.",
+                ],
+                images: [],
+                link: 'https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FxevGXYMG7yjFMMhTxbnv6F%2FUntitled%3Fnode-id%3D0%253A1'
+            },
+            {
+                step: "Front-End Implementation",
+                description: [
+                    "I designed the landing pages by building reusable Liquid (Shopify) components and styling with custom CSS + Tailwind utility classes.", 
+                    "Each component is build with a schema that allows the client to duplicate, edit, or add more sections.",
+                ],
+                images: [],
+                link: null,
+            },
+        ],
+        details: [
+            "Wireframes, mockups and prototype designed on Figma",
+            "Built with Shopify Liquid, Javascript, & Tailwind CSS",
         ]
         
     },

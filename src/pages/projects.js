@@ -23,7 +23,7 @@ const Projects = () => {
 
     resizeFunction(setResizing, setMobileNav, setMobileFilters)
 
-    const filters = ['featured', 'front-end', 'full-stack', 'ux/ui', 'branding']
+    const filters = ['featured', 'front-end', 'full-stack', 'ux/ui', 'branding', 'e-commerce']
 
     const handleFilters = (filter) => {
         if (selectedFilters.includes(filter)) {
@@ -156,7 +156,7 @@ const Projects = () => {
                         
                     </div>
             </div>
-            <div className="projects-container projects-page-container">
+            <div className="projects-container projects-page-container" id="projects-container">
             
                     {
                         filteredProjects.map((project, i) => { 

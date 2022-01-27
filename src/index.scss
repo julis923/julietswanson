@@ -822,7 +822,12 @@ h4 {
     }
 }
 
-.video {
+.project-image {
+    width: 100px;
+}
+
+.video,
+.project-image {
     width: 465px;
     position: absolute;
     top: 65px;

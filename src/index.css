@@ -1120,7 +1120,12 @@ h4 {
   }
 }
 
-.video {
+.project-image {
+  width: 100px;
+}
+
+.video,
+.project-image {
   width: 465px;
   position: absolute;
   top: 65px;
@@ -1128,7 +1133,8 @@ h4 {
 }
 
 @media only screen and (max-width: 1200px) {
-  .video {
+  .video,
+  .project-image {
     width: 360px;
     position: absolute;
     top: 45px;
@@ -1137,7 +1143,8 @@ h4 {
 }
 
 @media only screen and (max-width: 950px) {
-  .video {
+  .video,
+  .project-image {
     width: 300px;
     top: 35px;
     left: 105px;
@@ -1145,7 +1152,8 @@ h4 {
 }
 
 @media only screen and (max-width: 750px) {
-  .video {
+  .video,
+  .project-image {
     width: 235px;
     top: 30px;
     left: 85px;
@@ -1153,7 +1161,8 @@ h4 {
 }
 
 @media only screen and (max-width: 499px) {
-  .video {
+  .video,
+  .project-image {
     width: 165px;
     top: 23px;
     left: 60px;

@@ -6,7 +6,8 @@ const isInProjects = (element) => {
 }
 
 const setProjectBar = (projects, setProjectNav, setMobileFilters, setViewProjects ) => {
-    if (isInProjects(document.getElementById(projects[0].hashlink))) {
+    console.log(projects)
+    if (isInProjects(document.getElementById('projects-container')) || isInProjects(document.querySelector('.projects-page-header'))) {
         setProjectNav(true)
     } else {
         setProjectNav(false)
