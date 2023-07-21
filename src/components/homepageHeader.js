@@ -27,7 +27,7 @@ const HomepageHeader = ({ link1, link2, link3, link4, resizing }) => {
                 <h1 ref={navName}>juliet swanson</h1>
             </Link>
             <div className="nav-title">
-                <h2 ref={title1}>front-end.</h2>
+                <h2 ref={title1}>frontend.</h2>
                 <h2 ref={title2}>ux/ui.</h2>
             </div>
         </div>
