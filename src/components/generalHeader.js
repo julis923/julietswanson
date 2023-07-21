@@ -20,7 +20,7 @@ const GeneralHeader = ({ resizing }) => {
                 <h1>juliet swanson</h1>
             </Link>
             <div className="nav-title">
-                <h2>front-end.</h2>
+                <h2>frontend.</h2>
                 <h2>ux/ui.</h2>
             </div>
         </div>
