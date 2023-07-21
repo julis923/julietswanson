@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import { HashLink as Link } from 'react-router-hash-link';
 import HomepageHeader from "./homepageHeader";
 import GeneralHeader from "./generalHeader"
-import resume from '../files/Juliet-Swanson_2022.pdf'
+import resume from '../files/FE_JulietSwanson_2023.pdf'
 
 const NavBar = ({ page, mobileNav, setMobileNav, resizing }) => {
 
