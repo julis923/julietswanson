@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/julietswanson/static/css/main.40d3f3de.chunk.css",
-    "main.js": "/julietswanson/static/js/main.e453c11b.chunk.js",
-    "main.js.map": "/julietswanson/static/js/main.e453c11b.chunk.js.map",
+    "main.js": "/julietswanson/static/js/main.0529c020.chunk.js",
+    "main.js.map": "/julietswanson/static/js/main.0529c020.chunk.js.map",
     "runtime-main.js": "/julietswanson/static/js/runtime-main.5fbf3093.js",
     "runtime-main.js.map": "/julietswanson/static/js/runtime-main.5fbf3093.js.map",
     "static/js/2.6cdee204.chunk.js": "/julietswanson/static/js/2.6cdee204.chunk.js",
@@ -26,6 +26,8 @@
     "static/media/macbook-outline.4ef9d2de.png": "/julietswanson/static/media/macbook-outline.4ef9d2de.png",
     "static/media/mystyler-video.4fac789b.mp4": "/julietswanson/static/media/mystyler-video.4fac789b.mp4",
     "static/media/mystyler-wireframe.eab6d15a.png": "/julietswanson/static/media/mystyler-wireframe.eab6d15a.png",
+    "static/media/procotoProposal.6d48e0be.mov": "/julietswanson/static/media/procotoProposal.6d48e0be.mov",
+    "static/media/procotoProposalPDF.db8dabb0.pdf": "/julietswanson/static/media/procotoProposalPDF.db8dabb0.pdf",
     "static/media/railtime-video.9729891b.mp4": "/julietswanson/static/media/railtime-video.9729891b.mp4",
     "static/media/resumes-1.3582c941.png": "/julietswanson/static/media/resumes-1.3582c941.png",
     "static/media/resumes-2.e764a516.png": "/julietswanson/static/media/resumes-2.e764a516.png",
@@ -36,6 +38,6 @@
     "static/js/runtime-main.5fbf3093.js",
     "static/js/2.6cdee204.chunk.js",
     "static/css/main.40d3f3de.chunk.css",
-    "static/js/main.e453c11b.chunk.js"
+    "static/js/main.0529c020.chunk.js"
   ]
 }
