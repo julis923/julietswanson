@@ -2,12 +2,11 @@ import emailIcon from '../assets/email-icon.png';
 import linkedinIcon from '../assets/linkedin-icon.png';
 import githubIcon from '../assets/github-icon.png'
 import resumeIcon from '../assets/resume-icon.png'
-import resume from '../files/FE_JulietSwanson_2023.pdf'
+import resume from '../files/FE+UX_JulietSwanson_Resume.pdf'
 
 const ContactSection = () => {
     return  (
-        <div className="contact-section">
-            <h2 id="contact">contact</h2>
+        <div className="contact-section" id="contact">
             <div className="contact-section-container">
                 <div className="contact-item">
                     <img className="contact-icon" src={emailIcon} alt="email icon"/>

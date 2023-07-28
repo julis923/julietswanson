@@ -104,7 +104,7 @@ const Projects = () => {
                 <div className="projects-bg"></div>
             </div>
             <div className="projects-page-header">
-                <h2>all projects</h2>
+                <h2>Projects</h2>
             </div>
             <div className={`${projectNav ? "projects-menu-fixed" : "projects-menu-fixed no-transition invisible no-pointer-events"} ${resizing ? "no-transition" : ""} `}>
                     <div className="hashlinks-menu" id="view-projects">

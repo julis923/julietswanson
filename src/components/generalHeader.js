@@ -17,11 +17,11 @@ const GeneralHeader = ({ resizing }) => {
     return (
         <div className={`nav-name-general ${resizing ? "no-transition" : ""} ${!opacity ? "" : "opaque"}`}>
             <Link to="/">
-                <h1>juliet swanson</h1>
+                <h1>Juliet Swanson</h1>
             </Link>
             <div className="nav-title">
-                <h2>frontend.</h2>
-                <h2>ux/ui.</h2>
+                <h2>Frontend.</h2>
+                <h2>UX/UI</h2>
             </div>
         </div>
     )

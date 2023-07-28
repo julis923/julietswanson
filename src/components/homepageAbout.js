@@ -16,12 +16,15 @@ const HomepageAbout = () => {
     'GraphQL',
     'Jest',
     'Cypress',
+    'Wordpress CMS',
+    'Shopify Liquid',
     'UX/UI',
     'Wireframing',
     'Prototyping',
     'Design systems',
     'Figma',
     'Adobe XD',
+    'Sketch',
     'Amplitude',
     'Asana',
     'Notion',
@@ -30,11 +33,10 @@ const HomepageAbout = () => {
   ];
 
   return (
-    <div className="homepage-about">
-      <h2 id="about">about</h2>
+    <div className="homepage-about" id="about">
       <div className="homepage-about-copy">
         <div className="content">
-          <h3>welcome!</h3>
+          <h3>About</h3>
           <p>
             I'm a Frontend Engineer & UX/UI designer located in the New York
             City area. I've worked on a wide range of projects ranging from
@@ -56,7 +58,7 @@ const HomepageAbout = () => {
           </p>
         </div>
         <div className="content">
-          <h3 style={{ marginTop: -60 }}>skills</h3>
+          <h3 style={{ marginTop: -60 }}>Skills</h3>
           <ul className='skills'>
             {skills.map((skill) => {
               return <li key={skill}>{skill}</li>;

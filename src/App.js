@@ -29,14 +29,14 @@ function App({ page }) {
     <div className={`App ${mobileNav ? "no-overflow" : ""} ${resizing ? "no-transition" : ""}`}>
       <NavBar page={page} mobileNav={mobileNav} setMobileNav={setMobileNav} resizing={resizing} />
       <ParallaxBg classes={'homepage-bg-1'} resizing={resizing} mobileNav={mobileNav} bg={1} iOS={iOS()}/>
+      <HomepageProjects resizing={resizing} setResizing={setResizing} />
       <HomepageAbout />
-      <div style={{position: 'relative', height: '60vh', backgroundColor: 'rgb(253, 106, 0)', zIndex: '-1'}}>
+      <div style={{position: 'relative', height: '30vh', backgroundColor: '#ffba0d', zIndex: '-1'}}>
         <ParallaxBg classes={'homepage-bg-2'} mobileNav={mobileNav} resizing={resizing} bg={2} iOS={iOS()}/>
       </div>
-      <HomepageProjects resizing={resizing} setResizing={setResizing} />
-      <div style={{position: 'relative', height: '60vh', backgroundColor: '#ffba0d', zIndex: '-1'}}>
+      {/* <div style={{position: 'relative', height: '30vh', backgroundColor: '#e9ecec', zIndex: '-1'}}>
         <ParallaxBg classes={'homepage-bg-3'} mobileNav={mobileNav} resizing={resizing} bg={3} iOS={iOS()}/>
-      </div>
+      </div> */}
       <ContactSection />
     </div>
 
