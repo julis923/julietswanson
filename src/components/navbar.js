@@ -17,6 +17,13 @@ const NavBar = ({ page, mobileNav, setMobileNav, resizing }) => {
     }
   }, [mobileNav]);
 
+  /**
+   * The function `setMobile` toggles the value of `mobileNav` using the previous value.
+   */
+  const setMobile = () => {
+    setMobileNav((prev) => !prev);
+  };
+
   return (
     <div className="navbar">
       {page === 'homepage' ? (
@@ -41,14 +48,18 @@ const NavBar = ({ page, mobileNav, setMobileNav, resizing }) => {
           >
             <Link
               to="/projects"
-              className={projectLinks ? 'project-page-link dropdown-link' : 'hidden'}
+              className={
+                projectLinks ? 'project-page-link dropdown-link' : 'hidden'
+              }
             >
               view all
             </Link>
             <Link
               to="/#featured"
               smooth
-              className={projectLinks ? 'project-page-link dropdown-link' : 'hidden'}
+              className={
+                projectLinks ? 'project-page-link dropdown-link' : 'hidden'
+              }
             >
               featured
             </Link>
@@ -69,7 +80,7 @@ const NavBar = ({ page, mobileNav, setMobileNav, resizing }) => {
         className={`mobile-nav-links ${
           mobileNav ? 'mobile-nav-links-fixed' : ''
         }`}
-        onClick={() => setMobileNav(!mobileNav)}
+        onClick={setMobile}
       >
         <div className={mobileNav ? 'top-mobile-div' : ''}></div>
         <div className={mobileNav ? 'center-mobile-div' : 'center-div'}></div>
