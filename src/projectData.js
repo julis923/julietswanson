@@ -674,6 +674,7 @@ const projects = [
   // },
   {
     title: 'Embue Cacao',
+    subtitle: 'Landing pages & marketing collateral for an online storefront.',
     id: 'embue',
     hex: '#9F6D57',
     description:
