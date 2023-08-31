@@ -326,12 +326,11 @@ h4 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  max-width: 1200px;
+  display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  max-width: 1200px;
-  display: flex;
-  justify-content: flex-end;
   max-width: 1200px;
   margin: 0;
   z-index: 5;
@@ -360,9 +359,9 @@ h4 {
   padding: 0 80px;
   padding-top: 40px;
   background-color: #f9f9f9;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 0 auto;
 }
 
@@ -2252,5 +2251,17 @@ button.external-link {
 
 .case-study-title {
   text-decoration: underline;
+}
+
+.back-arrow-container {
+  margin-left: 0 !important;
+}
+
+.back-arrow {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-filter: brightness(0);
+          filter: brightness(0);
+  width: 28px;
 }
 /*# sourceMappingURL=index.css.map */

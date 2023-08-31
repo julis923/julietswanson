@@ -276,7 +276,6 @@ h4 {
 
 .nav-links {
   display: flex;
-  justify-content: flex-end;
   max-width: 1200px;
   display: flex;
   justify-content: flex-end;
@@ -305,7 +304,7 @@ h4 {
   padding: 0 80px;
   padding-top: 40px;
   background-color: #f9f9f9;
-  justify-content: flex-end;
+  justify-content: space-between;
   margin: 0 auto;
 }
 
@@ -1737,4 +1736,12 @@ button.external-link {
 
 .case-study-title {
   text-decoration: underline;
+}
+.back-arrow-container {
+  margin-left: 0 !important;
+}
+.back-arrow {
+  transform: rotate(180deg);
+  filter: brightness(0);
+  width: 28px;
 }

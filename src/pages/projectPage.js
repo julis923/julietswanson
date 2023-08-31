@@ -1,15 +1,17 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import projects from '../projectData';
 import ScrollToTop from '../components/scrollToTop';
 import ProgressBar from 'react-scroll-progress-bar';
 import { useNavigate } from 'react-router-dom';
 import resume from '../files/FE+UX_JulietSwanson_Resume.pdf';
 import { HashLink } from 'react-router-hash-link';
+import arrow from '../assets/arrowIcon.png';
 
 function ProjectPage() {
   const currId = window.location.pathname.split('/')[2];
   const project = projects.filter((proj) => proj.id === currId)[0];
   const navigate = useNavigate();
+  const [hover, setHover] = useState(false);
 
   useEffect(() => {
     if (!project) {
@@ -38,10 +40,16 @@ function ProjectPage() {
     <>
       <div style={{ background: '#f9f9f9', width: '100vw' }}>
         <div className="nav-links project-header-nav-link">
+          <HashLink
+            to="/"
+            smooth={true}
+            className="back-arrow-container"
+            onMouseOver={() => setHover(true)}
+            onMouseLeave={() => setHover(false)}
+          >
+            <img src={arrow} alt="back to home" className="back-arrow" />
+          </HashLink>
           <div>
-            <HashLink to="/" smooth={true}>
-              Home
-            </HashLink>
             <HashLink to="/#about" smooth={true}>
               About
             </HashLink>
