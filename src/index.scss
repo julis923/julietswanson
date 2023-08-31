@@ -1,14 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
-
 * {
   margin: 0;
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+.App {
+  padding: 80px;
+  padding-top: 40px;
+  margin: 120px;
+  margin-top: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 $primary-orange: rgb(253, 106, 0);
 $primary-yellow: #ffba0d;
-$primary-black: #3f3e3f;
-$primary-grey: #f8f8f8;
+$primary-purple: #6c8be5;
+$primary-black: #3f3a3a;
+$primary-grey: #ffffff;
 $dark-grey: #afb5b5;
 $header: 'Heebo', sans-serif;
 $copy: 'Heebo', sans-serif;
@@ -53,64 +65,63 @@ body {
   transition: none !important;
 }
 
+.hi {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 45px;
+  color: $primary-purple;
+}
+
 p,
 li {
   font-family: $copy;
   font-weight: 400;
   line-height: 24px;
-  font-size: 16px;
+  font-size: 18px;
+  color: #2323238a;
+}
+
+h1 {
+  font-size: 28px;
+  font-family: $header;
+  font-weight: 300;
   color: $primary-black;
 }
 
 h2 {
-  font-size: 32px;
+  font-size: 22px;
   font-family: $header;
+  color: $primary-black;
 }
 
 h3 {
   font-family: $header;
   font-size: 28px;
+  color: $primary-black;
 }
 
 h4 {
   font-size: 24px;
   font-family: $header;
+  color: $primary-black;
 }
 
-.navbar {
+.banner {
   display: flex;
-  justify-content: space-between;
-  padding: 60px 80px;
-  height: 40vh;
-  min-height: 500px;
-  box-sizing: border-box;
-  @media only screen and (min-height: 1000px) {
-    height: 80vh;
-  }
-  @media only screen and (max-width: $mobile-breakpoint) {
-    height: 90vh;
-    min-height: 500px;
-  }
-  @media only screen and (max-width: 800px) {
-    padding: 60px;
-  }
-  @media only screen and (max-width: 499px) {
-    min-height: 300px;
-    padding: 40px;
-    height: 60vh;
-  }
-  @media only screen and (max-height: 499px) {
-    min-height: 300px;
-    height: 400px;
-  }
-  a {
-    text-decoration: none;
+  justify-content: flex-start;
+  width: 75vw;
+  max-width: 1200px;
+  margin: 0;
+  margin-top: 60px;
+  h1 {
+    color: $primary-black;
+    font-family: $header;
+    max-width: 600px;
   }
 }
 
 .nav-name {
   font-family: $header;
-  color: $primary-black;
+  color: white;
   font-size: 40px;
   .nav-title {
     display: flex;
@@ -124,7 +135,7 @@ h4 {
     font-size: 20px;
     text-align: right;
     opacity: 0;
-    color: $primary-black;
+    color: white;
     width: max-content;
     @media only screen and (max-width: $mobile-breakpoint) {
       font-size: 20px;
@@ -150,7 +161,7 @@ h4 {
   h1 {
     opacity: 0;
     text-decoration: none;
-    color: $primary-black;
+    color: white;
     padding: 20px 0 10px 0;
     font-size: 60px;
     line-height: 60px;
@@ -190,6 +201,23 @@ h4 {
   }
 }
 
+// .homepage_bg {
+//   height: 400px;
+//   overflow: hidden;
+//   position: absolute;
+//   right: 0;
+//   width: 400px;
+//   top: 0;
+//   img {
+//     width: 400px;
+//     margin-left: auto;
+//     margin-right: 0;
+//     position: absolute;
+//     right: 0;
+//     top: 100px;
+//   }
+// }
+
 .nav-name-general {
   position: relative;
   opacity: 0;
@@ -207,7 +235,7 @@ h4 {
     letter-spacing: 3px;
     margin-right: 10px;
     font-size: 20px;
-    color: $primary-yellow;
+    color: $primary-purple;
     width: max-content;
     @media only screen and (max-width: $mobile-breakpoint) {
       font-size: 20px;
@@ -247,15 +275,20 @@ h4 {
 }
 
 .nav-links {
-  width: 50%;
-  height: 30px;
   display: flex;
   justify-content: flex-end;
+  max-width: 1200px;
+  display: flex;
+  justify-content: flex-end;
+  max-width: 1200px;
+  margin: 0;
+  z-index: 5;
   a,
   .project-nav-link {
     font-family: $header;
+    font-family: 'Permanent Marker', cursive;
     color: $primary-black;
-    font-size: 16px;
+    font-size: 18px;
     margin-left: 20px;
     height: 30px;
     padding-bottom: 15px;
@@ -263,12 +296,17 @@ h4 {
     cursor: pointer;
     border-bottom: 4px solid transparent;
     &:hover {
-      border-bottom: 4px solid $primary-yellow;
+      color: $primary-purple;
     }
   }
-  @media only screen and (max-width: $mobile-breakpoint) {
-    display: none;
-  }
+}
+
+.project-header-nav-link {
+  padding: 0 80px;
+  padding-top: 40px;
+  background-color: #f9f9f9;
+  justify-content: flex-end;
+  margin: 0 auto;
 }
 
 .project-nav-link {
@@ -298,7 +336,7 @@ h4 {
     padding: 5px;
     transition: all 0.2s ease;
     &:hover {
-      color: $primary-yellow;
+      color: $primary-purple;
     }
   }
 }
@@ -336,6 +374,7 @@ h4 {
   }
   @media only screen and (max-width: $mobile-breakpoint) {
     display: block;
+    display: none;
   }
 }
 
@@ -375,7 +414,7 @@ h4 {
   width: 0;
   overflow: hidden;
   height: 100vh;
-  background-color: $primary-yellow;
+  background-color: $primary-purple;
   transition: width 0.5s ease-in-out;
   z-index: 10;
   overflow: hidden;
@@ -450,10 +489,9 @@ h4 {
 
 .homepage-projects,
 .homepage-about {
-  margin: 30px 0 0 0;
   min-height: 300px;
   h2 {
-    color: $primary-yellow;
+    color: $primary-purple;
     font-size: 50px;
     margin-left: 90px;
     line-height: 1.6rem;
@@ -488,53 +526,39 @@ h4 {
   background-color: $primary-grey;
   min-height: 200px;
   .content {
-    padding: 120px 100px 50px 100px;
-    max-width: 1400px;
-    @media only screen and (max-width: $mobile-breakpoint) {
-      p {
-        width: 100%;
-      }
-    }
-    @media only screen and (max-width: 800px) {
-      padding: 120px 60px 50px 60px;
-    }
-    @media only screen and (max-width: 499px) {
-      padding: 60px 40px 50px 40px;
-    }
+    margin-top: 60px;
+    max-width: 1200px;
   }
   h3 {
-    font-family: $header;
-    color: $primary-black;
+    font-family: 'Permanent Marker', cursive;
+    color: $primary-purple;
     margin-bottom: 20px;
   }
   p {
     width: 100%;
     color: $primary-black;
     font-weight: 400;
+    max-width: 750px;
   }
 }
 
-.homepage-about-copy {
+.homepage-about {
   background-color: white;
   border-top: none;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  margin-top: 40px;
+  @media only screen and (max-width: $mobile-breakpoint) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto;
+  }
 }
 
 .headshot-container {
   width: 100%;
-  height: 300px;
-  margin-top: -20px;
+  height: 200px;
   display: flex;
   justify-content: flex-end;
-  padding-bottom: 60px;
-  @media only screen and (max-width: $mobile-breakpoint) {
-    justify-content: center;
-    height: 80vw;
-    max-height: 450px;
-    padding-top: 50px;
-  }
-  @media only screen and (max-width: 499px) {
-    height: 70vw;
-  }
 }
 
 .headshot {
@@ -604,45 +628,25 @@ h4 {
 }
 
 .projects-container {
-  background-color: $primary-grey;
   padding-bottom: 100px;
+  max-width: 1200px;
   margin: 0 auto;
+  padding-top: 80px;
+  grid-gap: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  @media only screen and (max-width: 900px) {
+    grid-template-columns: 1fr;
+  }
+  //margin: 0 80px;
 }
 
 .project-container {
   position: relative;
   width: 100%;
   margin: 0 auto;
-}
-
-.project-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column-reverse;
-  justify-content: space-between;
-  box-sizing: border-box;
-  padding-bottom: 40px;
-  @media only screen and (max-width: 1300px) {
-    flex-direction: column-reverse;
-  }
-  @media only screen and (max-width: $mobile-breakpoint) {
-    padding: 0;
-    padding-bottom: 40px;
-  }
-  button {
-    border: 2px solid white;
-    background: white;
-    a {
-      color: white;
-    }
-    &:hover {
-      background-color: $primary-yellow;
-      border: 2px solid $primary-yellow;
-      a {
-        color: white;
-      }
-    }
-  }
 }
 
 .projects-page-container {
@@ -652,20 +656,20 @@ h4 {
 }
 
 .project-text {
+  display: none;
   box-sizing: border-box;
-  width: 100%;
+  width: 50%;
   max-width: 800px;
-  margin: 0 auto;
+  padding-right: 40px;
   h4 {
     color: $primary-black;
-    padding-top: 40px;
     font-size: 24px;
     transition: all 0.2s ease-in-out;
   }
   p {
     padding: 20px 0;
     transition: all 0.2s ease-in-out;
-    color: $primary-black;
+    color: #999595;
     font-size: 16px;
   }
   li {
@@ -676,19 +680,6 @@ h4 {
     margin-left: 22px;
     font-size: 16px;
     transition: all 0.2s ease-in-out;
-  }
-  @media only screen and (max-width: 1200px) {
-    width: 600px;
-  }
-  @media only screen and (max-width: 950px) {
-    width: 450px;
-  }
-  @media only screen and (max-width: 750px) {
-    width: 350px;
-  }
-  @media only screen and (max-width: 499px) {
-    width: 100vw;
-    padding: 0 40px;
   }
 }
 
@@ -778,9 +769,39 @@ h4 {
 
 .project-media {
   display: flex;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
   justify-content: center;
-  margin-bottom: 20px;
-  padding-top: 60px;
+  position: relative;
+  border-radius: 10px;
+  img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    transition: filter 0.2s ease;
+    &:hover {
+      filter: brightness(0.35);
+    }
+  }
+}
+
+.project-media__hover {
+  position: absolute;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  p {
+    color: white;
+    padding: 40px;
+    font-size: 20px;
+  }
+  .arrow {
+    position: absolute;
+    width: 40px;
+    bottom: 20px;
+    right: 30px;
+  }
 }
 
 .video-wrapper {
@@ -929,7 +950,8 @@ h4 {
 }
 
 .project-details {
-  padding: 20px 0 100px 0;
+  margin: 0 auto;
+  padding: 0 80px;
   box-sizing: border-box;
   background-color: white;
   margin-bottom: 0px !important;
@@ -939,25 +961,25 @@ h4 {
   opacity: 1;
   height: auto;
   transition: opacity 1s ease;
+  h3 {
+    font-size: 20px;
+    color: $primary-black;
+  }
 }
 
 .project-details-content {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+  margin-top: 80px;
+  margin-bottom: 80px;
   box-sizing: border-box;
-  @media only screen and (max-width: 1200px) {
-    width: 600px;
+  li {
+    list-style: none;
+    margin-left: 2px;
   }
-  @media only screen and (max-width: 950px) {
-    width: 450px;
-  }
-  @media only screen and (max-width: 750px) {
-    width: 350px;
-  }
-  @media only screen and (max-width: 499px) {
-    width: 100%;
-    padding: 0 40px;
+  h2 {
+    margin-bottom: 20px;
   }
   button {
     border: 2px solid $primary-yellow;
@@ -1134,44 +1156,6 @@ h4 {
   min-height: 0 !important;
 }
 
-.homepage-bg-1 {
-  width: 100vw;
-  height: 100vh;
-  min-height: 100vh;
-  opacity: 0.9;
-  position: absolute;
-  right: 0;
-  top: 0px;
-  background-attachment: fixed;
-  background-position: right;
-  background-repeat: no-repeat;
-  background-size: 70vh;
-  z-index: -2;
-  background-image: url('../src/assets/homepage-bg_1.png');
-  @media only screen and (max-width: $mobile-breakpoint) and (min-height: 600px) {
-    background-size: 720px;
-  }
-  @media only screen and (max-width: 650px) {
-    background-size: 110vw;
-  }
-  @media only screen and (min-height: 1300px) {
-    background-size: 80vh;
-  }
-  @media only screen and (max-width: 499px) {
-    background-attachment: scroll;
-    background-position-y: top;
-    background-size: 400px;
-  }
-  @media only screen and (max-height: 499px) {
-    background-attachment: scroll;
-    background-size: 400px;
-    background-position-y: top;
-  }
-  @media only screen and (max-width: 360px) {
-    background-size: 300px;
-  }
-}
-
 .homepage-bg-2 {
   width: 100vw;
   height: 30vh;
@@ -1249,7 +1233,6 @@ h4 {
 }
 
 .contact-section {
-  height: 300px;
   h2 {
     color: white;
     font-size: 70px;
@@ -1276,43 +1259,35 @@ h4 {
 }
 
 .contact-section-container {
-  padding: 100px 100px 50px 100px;
   display: flex;
-  flex-direction: column;
-  @media only screen and (max-width: 800px) {
-    padding: 100px 60px 100px 60px;
-  }
-  @media only screen and (max-width: 499px) {
-    padding: 80px 50px 80px 50px;
-  }
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 50px;
 }
 
 .contact-item {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  margin-bottom: 30px;
+  margin: 30px 30px;
+  margin-bottom: 0;
   a,
   p {
     font-family: $copy;
     color: $primary-black;
     text-decoration: none;
-    font-size: 15px;
-    @media only screen and (max-width: 499px) {
-      font-size: 16px;
-    }
-    @media only screen and (max-width: 300px) {
-      font-size: 12px;
-    }
+    cursor: pointer;
   }
 }
 
 .contact-icon {
-  width: 30px;
+  width: 24px;
+  cursor: pointer;
   margin-right: 10px;
 }
 
 .projects-page {
-  .navbar {
+  .banner {
     height: 180px;
     box-sizing: border-box;
     min-height: 0;
@@ -1327,7 +1302,7 @@ h4 {
     .project-page-link {
       color: $primary-black;
       &:hover {
-        color: $primary-yellow;
+        color: $primary-purple;
       }
     }
     .project-main-link {
@@ -1346,6 +1321,7 @@ h4 {
     background-color: white;
     margin-top: -120px;
     padding-bottom: 300px;
+    padding-top: 30px;
     h3,
     li {
       color: $primary-black;
@@ -1376,7 +1352,7 @@ h4 {
   }
 
   .details-toggle-view {
-    color: $primary-yellow;
+    color: $primary-purple;
   }
 
   .tech-details li {
@@ -1401,7 +1377,7 @@ h4 {
   h2 {
     font-size: 30px;
     margin-left: 76px;
-    color: $primary-black;
+    color: white;
     margin-top: -30px;
     margin-bottom: 40px;
     @media only screen and (max-width: 800px) {
@@ -1417,67 +1393,6 @@ h4 {
   }
 }
 
-.projects-banner {
-  position: relative;
-  width: 100vw;
-  height: 180px;
-  background-color: $primary-black;
-}
-
-.projects-bg {
-  position: absolute;
-  background-image: url('../src/assets/projects-bg.png');
-  background-size: 900px;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position-x: right;
-  background-position-y: 140px;
-  opacity: 0.9;
-  width: 100vw;
-  margin-top: -1px;
-  height: 300px;
-  @media only screen and (max-width: 800px) {
-    background-size: 200vw;
-    background-position-x: -100vw;
-  }
-  @media only screen and (max-width: 400px) {
-    background-size: 260vw;
-    background-position-y: 200px;
-    background-position-x: -140vw;
-  }
-  @media only screen and (max-height: 400px) {
-    background-size: 800px;
-    background-position-x: center;
-    background-position-y: 100px;
-    height: 250px;
-  }
-  @media only screen and (max-width: 499px) {
-    background-attachment: scroll;
-    background-position-y: top;
-  }
-  @media only screen and (max-height: 499px) {
-    background-attachment: scroll;
-    background-position-y: top;
-  }
-}
-
-.projects-menu-fixed {
-  position: fixed;
-  top: 0;
-  width: 100vw;
-  height: 60px;
-  display: flex;
-  box-sizing: border-box;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 30px;
-  background-color: $primary-black;
-  z-index: 10;
-  opacity: 1;
-  transition: all 0.2s ease-in-out;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-
 .hashlinks-menu {
   position: relative;
   .hashlink {
@@ -1488,7 +1403,7 @@ h4 {
     text-decoration: none;
     transition: all 0.2s ease-in-out;
     &:hover {
-      color: $primary-yellow;
+      color: $primary-purple;
     }
     @media only screen and (max-width: 360px) {
       font-size: 14px;
@@ -1643,6 +1558,10 @@ h4 {
 
 .homepage-projects {
   background-color: $primary-grey;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .skills {
@@ -1656,4 +1575,166 @@ h4 {
       margin-left: -16px;
     }
   }
+}
+
+.project-banner {
+  height: 100vh !important;
+  box-sizing: border-box;
+  padding: 80px;
+  width: 100vw !important;
+  display: flex;
+  background-color: #f9f9f9;
+  h1 {
+    font-size: 70px;
+    color: $primary-black;
+    font-weight: 600;
+    max-width: 600px;
+    line-height: 88px;
+    margin-bottom: 10px;
+  }
+  h2 {
+    font-size: 22px;
+    font-weight: normal;
+    color: $primary-black;
+    max-width: 600px;
+  }
+  .project-banner__title {
+    margin-right: 40px;
+  }
+  img {
+    width: 40vw;
+    max-width: 600px;
+  }
+}
+
+.project-banner--procoto {
+  button {
+    &:hover {
+      border: 2px solid #2596c0 !important;
+      background-color: #2596c0 !important;
+    }
+  }
+  button.external-link {
+    &:hover {
+      color: #2596c0 !important;
+      background-color: white !important;
+      border: 2px solid #2596c0 !important;
+    }
+  }
+}
+
+.project-banner--icsi {
+  button {
+    &:hover {
+      border: 2px solid #723937 !important;
+      background-color: #723937 !important;
+    }
+  }
+  button.external-link {
+    &:hover {
+      color: #723937 !important;
+      background-color: white !important;
+
+      border: 2px solid #723937 !important;
+    }
+  }
+}
+
+.project-banner--wholesome-learning {
+  button {
+    &:hover {
+      border: 2px solid #73834b !important;
+      background-color: #73834b !important;
+    }
+  }
+  button.external-link {
+    &:hover {
+      color: #73834b !important;
+      background-color: white !important;
+      border: 2px solid #73834b !important;
+    }
+  }
+}
+
+.project-banner__content {
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  @media only screen and (max-width: 1000px) {
+    flex-direction: column;
+    img {
+      width: 75vw;
+    }
+    .project-banner__title {
+      margin-right: 0;
+      margin-bottom: 60px;
+      margin-top: 60px;
+      text-align: center;
+      h1 {
+        font-size: 70px;
+      }
+    }
+  }
+  .project-banner__btns {
+    margin-top: 20px;
+  }
+}
+
+.project-overview {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: wrap;
+  div {
+    margin-bottom: 30px;
+  }
+}
+
+button {
+  border: none;
+  padding: 10px 20px;
+  margin-right: 16px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: $copy;
+  color: white;
+  transition: all 0.15s ease-out;
+  min-width: 130px;
+}
+
+button.external-link {
+  border: 2px solid black;
+}
+
+.project-section-banner {
+  h2 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 34px;
+  }
+}
+
+.section {
+  margin-bottom: 50px;
+}
+
+.subsection {
+  h3 {
+    margin-bottom: 8px;
+    font-size: 18px;
+  }
+  margin-bottom: 20px;
+  img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+.case-study-title {
+  text-decoration: underline;
 }

@@ -1,19 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { HashRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import './index.css';
 import App from './App';
-import Projects from './pages/projects';
+import ProjectPage from './pages/projectPage';
 import reportWebVitals from './reportWebVitals';
 
 //basename={process.env.PUBLIC_URL}
 ReactDOM.render(
-  <HashRouter>
+  <Router>
     <Routes>
-      <Route path="/" element={<App page={'homepage'} />}></Route>
-      <Route path="/projects" element={<Projects page={'projects'} />}></Route>
+      <Route
+        path="/project/*"
+        element={<ProjectPage />}
+      ></Route>
+      <Route
+        path="/project"
+        element={<App page={'homepage'} />}
+      ></Route>
+      <Route path="*" element={<App page={'homepage'} />}></Route>
     </Routes>
-  </HashRouter>,
+  </Router>,
   document.getElementById('root')
 );
 

@@ -1,45 +1,34 @@
-import NavBar from "./components/navbar";
-import HomepageAbout from "./components/homepageAbout";
-import HomepageProjects from "./components/HomepageProjects";
-import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
-import ParallaxBg from './components/parallaxBg';
+import NavBar from './components/navbar';
+import HomepageAbout from './components/homepageAbout';
+import HomepageProjects from './components/HomepageProjects';
+import React, { useState } from 'react';
 import resizeFunction from './components/resizeFunction';
 import ContactSection from './components/contactSection';
-import { iOS } from './components/viewFunctions';
+import ScrollToTop from './components/scrollToTop';
 
 function App({ page }) {
+  const [mobileNav, setMobileNav] = useState(false);
+  const [resizing, setResizing] = useState(false);
 
-  const [mobileNav, setMobileNav] = useState(false)
-  const [resizing, setResizing] = useState(false)
-
-
-  resizeFunction(setResizing, setMobileNav)
-
-  const navigate = useNavigate();
-
-  useEffect(() => {
-    if (window.location.pathname !== '/projects' || window.location.pathname !== '/' ) {
-        navigate('/')
-    }
-}, [navigate])
-
+  resizeFunction(setResizing, setMobileNav);
+  ScrollToTop();
 
   return (
-    <div className={`App ${mobileNav ? "no-overflow" : ""} ${resizing ? "no-transition" : ""}`}>
-      <NavBar page={page} mobileNav={mobileNav} setMobileNav={setMobileNav} resizing={resizing} />
-      <ParallaxBg classes={'homepage-bg-1'} resizing={resizing} mobileNav={mobileNav} bg={1} iOS={iOS()}/>
+    <div
+      className={`App ${mobileNav ? 'no-overflow' : ''} ${
+        resizing ? 'no-transition' : ''
+      }`}
+    >
+      <NavBar
+        page={page}
+        mobileNav={mobileNav}
+        setMobileNav={setMobileNav}
+        resizing={resizing}
+      />
       <HomepageProjects resizing={resizing} setResizing={setResizing} />
       <HomepageAbout />
-      <div style={{position: 'relative', height: '30vh', backgroundColor: '#ffba0d', zIndex: '-1'}}>
-        <ParallaxBg classes={'homepage-bg-2'} mobileNav={mobileNav} resizing={resizing} bg={2} iOS={iOS()}/>
-      </div>
-      {/* <div style={{position: 'relative', height: '30vh', backgroundColor: '#e9ecec', zIndex: '-1'}}>
-        <ParallaxBg classes={'homepage-bg-3'} mobileNav={mobileNav} resizing={resizing} bg={3} iOS={iOS()}/>
-      </div> */}
       <ContactSection />
     </div>
-
   );
 }
 

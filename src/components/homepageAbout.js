@@ -36,38 +36,33 @@ const HomepageAbout = () => {
     <div className="homepage-about" id="about">
       <div className="homepage-about-copy">
         <div className="content">
-          <h3>About</h3>
+          <h3>About Me</h3>
           <p>
-            I'm a Frontend Engineer & UX/UI designer located in the New York
-            City area. I've worked on a wide range of projects ranging from
-            large-scale web applications to customized, dynamic websites for
-            clients.
+            Welcome! I'm a Product/UX Designer & Frontend Engineer located in
+            the New York City area. I've worked on a wide range of projects
+            ranging from large-scale web apps to customized, dynamic websites
+            for clients.
           </p>
           <br />
           <p>
-            Most recently, I've worked as a Founding Engineer at a fast-paced
-            SaaS startup, spearheading design systems, frontend architecture,
-            API implementations, and CI/CD deployments.
+            I love designing for product-led growth - I'm always thinking about
+            how designs and code can scale together, increase conversion rates,
+            and reduce user churn. Most recently, I've worked as a founding
+            engineer and product designer at a SaaS startup, spearheading all
+            design, frontend architecture, API implementations, and CI/CD
+            deployments.
           </p>
           <br />
           <p>
-            I love a good challenge, whether it be a design pain-point to solve
-            or a new framework or tool to learn. Check out my portfolio below,
-            and please reach out with any questions or opportunities! Thanks for
-            stopping by.
+            In my free time, you can find me reading, exploring a museum (I have
+            a degree in art history!), or walking around NYC neighborhoods
+            listening to a great podcast. Thanks for stopping by!
           </p>
+          <br />
         </div>
-        <div className="content">
-          <h3 style={{ marginTop: -60 }}>Skills</h3>
-          <ul className='skills'>
-            {skills.map((skill) => {
-              return <li key={skill}>{skill}</li>;
-            })}
-          </ul>
-        </div>
-        <div className="headshot-container">
-          <img src={headshot} className="headshot" alt="headshot" />
-        </div>
+      </div>
+      <div className="headshot-container">
+        <img src={headshot} className="headshot" alt="headshot" />
       </div>
     </div>
   );

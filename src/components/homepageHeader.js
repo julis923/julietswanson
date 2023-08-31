@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { gsap } from 'gsap';
+//import bgImg from '../assets/homepage_bg.png';
 
 const HomepageHeader = ({ resizing }) => {
   const tl = useRef();
@@ -27,6 +28,9 @@ const HomepageHeader = ({ resizing }) => {
           <h2 ref={title2}>UX/UI.</h2>
         </div>
       </div>
+      {/* <div className="homepage_bg">
+        <img src={bgImg} alt="background design" />
+      </div> */}
     </>
   );
 };
