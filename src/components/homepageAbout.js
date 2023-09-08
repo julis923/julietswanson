@@ -2,34 +2,6 @@ import headshot from '../assets/headshot.png';
 import React from 'react';
 
 const HomepageAbout = () => {
-  const skills = [
-    'JavaScript',
-    'React',
-    'Typescript',
-    'HTML',
-    'CSS/Sass/Tailwind',
-    'Redux',
-    'Node.js',
-    'Next.js',
-    'AWS (Cognito, S3, Amplify)',
-    'REST',
-    'Jest',
-    'Cypress',
-    'Wordpress CMS',
-    'Shopify Liquid',
-    'UX/UI',
-    'Wireframing',
-    'Prototyping',
-    'Design systems',
-    'Figma',
-    'Adobe XD',
-    'Sketch',
-    'Amplitude',
-    'Asana',
-    'Notion',
-    'Linear',
-    'Agile',
-  ];
 
   return (
     <div className="homepage-about" id="about">
