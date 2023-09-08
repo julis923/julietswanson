@@ -13,7 +13,6 @@ const HomepageAbout = () => {
     'Next.js',
     'AWS (Cognito, S3, Amplify)',
     'REST',
-    'GraphQL',
     'Jest',
     'Cypress',
     'Wordpress CMS',
