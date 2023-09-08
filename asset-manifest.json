@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/julietswanson/static/css/main.caf9ea73.chunk.css",
-    "main.js": "/julietswanson/static/js/main.424720bb.chunk.js",
-    "main.js.map": "/julietswanson/static/js/main.424720bb.chunk.js.map",
+    "main.js": "/julietswanson/static/js/main.7fbb2ed9.chunk.js",
+    "main.js.map": "/julietswanson/static/js/main.7fbb2ed9.chunk.js.map",
     "runtime-main.js": "/julietswanson/static/js/runtime-main.fb0a863e.js",
     "runtime-main.js.map": "/julietswanson/static/js/runtime-main.fb0a863e.js.map",
-    "static/js/2.552c2883.chunk.js": "/julietswanson/static/js/2.552c2883.chunk.js",
-    "static/js/2.552c2883.chunk.js.map": "/julietswanson/static/js/2.552c2883.chunk.js.map",
+    "static/js/2.8b52da01.chunk.js": "/julietswanson/static/js/2.8b52da01.chunk.js",
+    "static/js/2.8b52da01.chunk.js.map": "/julietswanson/static/js/2.8b52da01.chunk.js.map",
     "static/js/3.836f7a51.chunk.js": "/julietswanson/static/js/3.836f7a51.chunk.js",
     "static/js/3.836f7a51.chunk.js.map": "/julietswanson/static/js/3.836f7a51.chunk.js.map",
     "index.html": "/julietswanson/index.html",
     "static/css/main.caf9ea73.chunk.css.map": "/julietswanson/static/css/main.caf9ea73.chunk.css.map",
-    "static/js/2.552c2883.chunk.js.LICENSE.txt": "/julietswanson/static/js/2.552c2883.chunk.js.LICENSE.txt",
+    "static/js/2.8b52da01.chunk.js.LICENSE.txt": "/julietswanson/static/js/2.8b52da01.chunk.js.LICENSE.txt",
     "static/media/FE+UX_JulietSwanson_Resume.92c7af34.pdf": "/julietswanson/static/media/FE+UX_JulietSwanson_Resume.92c7af34.pdf",
     "static/media/approvalsFlow.8901c109.png": "/julietswanson/static/media/approvalsFlow.8901c109.png",
     "static/media/approvalsProto.42e75c94.png": "/julietswanson/static/media/approvalsProto.42e75c94.png",
@@ -48,6 +48,13 @@
     "static/media/procotoTwo.4473fba7.png": "/julietswanson/static/media/procotoTwo.4473fba7.png",
     "static/media/procotoUserStories.ed0e4218.png": "/julietswanson/static/media/procotoUserStories.ed0e4218.png",
     "static/media/procotoUserStories2.c964f44a.png": "/julietswanson/static/media/procotoUserStories2.c964f44a.png",
+    "static/media/railtimeBanner.404def74.png": "/julietswanson/static/media/railtimeBanner.404def74.png",
+    "static/media/railtimeFinal.7d4feee3.png": "/julietswanson/static/media/railtimeFinal.7d4feee3.png",
+    "static/media/railtimeHifi.ca5ea97c.png": "/julietswanson/static/media/railtimeHifi.ca5ea97c.png",
+    "static/media/railtimeLofi.2efe370e.png": "/julietswanson/static/media/railtimeLofi.2efe370e.png",
+    "static/media/railtimeMain.d56fdb07.png": "/julietswanson/static/media/railtimeMain.d56fdb07.png",
+    "static/media/railtimeUserFlow.9c2500e0.png": "/julietswanson/static/media/railtimeUserFlow.9c2500e0.png",
+    "static/media/railtimeUserStory.4f4833e8.png": "/julietswanson/static/media/railtimeUserStory.4f4833e8.png",
     "static/media/resumes.69194202.png": "/julietswanson/static/media/resumes.69194202.png",
     "static/media/wholesomeBanner.f90353e3.png": "/julietswanson/static/media/wholesomeBanner.f90353e3.png",
     "static/media/wholesomeBranding.3f86afae.png": "/julietswanson/static/media/wholesomeBranding.3f86afae.png",
@@ -57,8 +64,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.fb0a863e.js",
-    "static/js/2.552c2883.chunk.js",
+    "static/js/2.8b52da01.chunk.js",
     "static/css/main.caf9ea73.chunk.css",
-    "static/js/main.424720bb.chunk.js"
+    "static/js/main.7fbb2ed9.chunk.js"
   ]
 }
