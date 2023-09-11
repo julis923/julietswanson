@@ -41,7 +41,7 @@ function ProjectPage() {
       <div style={{ background: '#f9f9f9', width: '100vw' }}>
         <div className="nav-links project-header-nav-link">
           <HashLink
-            to="/"
+            to="/julietswanson/"
             smooth={true}
             className="back-arrow-container"
             onMouseOver={() => setHover(true)}
