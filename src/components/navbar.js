@@ -39,7 +39,7 @@ const NavBar = ({ mobileNav, setMobileNav, resizing }) => {
           <h1>
             <span className="hi">Hi! </span>
             I'm Juliet, a Brooklyn-based Product/UX Designer and Frontend
-            Engineer. I bringing empathetic and scalable designs to life.
+            Engineer. I love bringing empathetic and scalable designs to life.
           </h1>
         </div>
         <div
