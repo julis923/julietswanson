@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/julietswanson/static/css/main.caf9ea73.chunk.css",
-    "main.js": "/julietswanson/static/js/main.55f4feb0.chunk.js",
-    "main.js.map": "/julietswanson/static/js/main.55f4feb0.chunk.js.map",
+    "main.css": "/julietswanson/static/css/main.6e0b0656.chunk.css",
+    "main.js": "/julietswanson/static/js/main.9efab9e8.chunk.js",
+    "main.js.map": "/julietswanson/static/js/main.9efab9e8.chunk.js.map",
     "runtime-main.js": "/julietswanson/static/js/runtime-main.fb0a863e.js",
     "runtime-main.js.map": "/julietswanson/static/js/runtime-main.fb0a863e.js.map",
     "static/js/2.8b52da01.chunk.js": "/julietswanson/static/js/2.8b52da01.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.836f7a51.chunk.js": "/julietswanson/static/js/3.836f7a51.chunk.js",
     "static/js/3.836f7a51.chunk.js.map": "/julietswanson/static/js/3.836f7a51.chunk.js.map",
     "index.html": "/julietswanson/index.html",
-    "static/css/main.caf9ea73.chunk.css.map": "/julietswanson/static/css/main.caf9ea73.chunk.css.map",
+    "static/css/main.6e0b0656.chunk.css.map": "/julietswanson/static/css/main.6e0b0656.chunk.css.map",
     "static/js/2.8b52da01.chunk.js.LICENSE.txt": "/julietswanson/static/js/2.8b52da01.chunk.js.LICENSE.txt",
     "static/media/FE+UX_JulietSwanson_Resume.92c7af34.pdf": "/julietswanson/static/media/FE+UX_JulietSwanson_Resume.92c7af34.pdf",
     "static/media/approvalsFlow.8901c109.png": "/julietswanson/static/media/approvalsFlow.8901c109.png",
@@ -65,7 +65,7 @@
   "entrypoints": [
     "static/js/runtime-main.fb0a863e.js",
     "static/js/2.8b52da01.chunk.js",
-    "static/css/main.caf9ea73.chunk.css",
-    "static/js/main.55f4feb0.chunk.js"
+    "static/css/main.6e0b0656.chunk.css",
+    "static/js/main.9efab9e8.chunk.js"
   ]
 }
